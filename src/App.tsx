@@ -85,8 +85,9 @@ function App() {
 };
 
   const getBikeTypeIcon = (bikeType: string) => {
-    return bikeType.toLowerCase().includes('e') || bikeType.toLowerCase().includes('electric') ? Zap : Bike;
-  };
+  const type = bikeType.toLowerCase().replace(/\s/g, '');
+  return (type === 'ebike' || type === 'electric') ? Zap : Bike;
+};
 
   // Type guard for interval-based pricing
   function isIntervalPricing(duration: any): duration is import('./types/api').IntervalPricing {
