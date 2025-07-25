@@ -18,18 +18,15 @@ function App() {
 
   // Iframe resize functionality
   useEffect(() => {
+    let lastHeight = 0;
+    let resizeTimeout: NodeJS.Timeout;
+
     const sendHeight = () => {
       // Get the main content container (the div with min-h-screen)
       const mainContainer = document.querySelector('.min-h-screen');
       
       let height;
       if (mainContainer) {
-        // Use the actual content height, not the min-height
-        const rect = mainContainer.getBoundingClientRect();
-        const computedStyle = window.getComputedStyle(mainContainer);
-        const paddingTop = parseFloat(computedStyle.paddingTop);
-        const paddingBottom = parseFloat(computedStyle.paddingBottom);
-        
         // Calculate the actual content height
         height = mainContainer.scrollHeight;
       } else {
@@ -37,24 +34,29 @@ function App() {
         height = document.body.scrollHeight;
       }
       
-      window.parent.postMessage({
-        type: 'resize',
-        height: height + 10 // Small buffer, reduced from 20
-      }, '*');
+      // Only send if height has changed significantly (prevent infinite loops)
+      if (Math.abs(height - lastHeight) > 5) {
+        lastHeight = height;
+        window.parent.postMessage({
+          type: 'resize',
+          height: height + 10
+        }, '*');
+      }
+    };
+
+    const debouncedSendHeight = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(sendHeight, 150);
     };
 
     // Send initial height after content is fully rendered
-    setTimeout(sendHeight, 200);
+    setTimeout(sendHeight, 300);
 
-    // Listen for window resize
-    window.addEventListener('resize', () => {
-      setTimeout(sendHeight, 100);
-    });
+    // Listen for window resize (debounced)
+    window.addEventListener('resize', debouncedSendHeight);
 
-    // Watch for content changes using ResizeObserver
-    const resizeObserver = new ResizeObserver(() => {
-      setTimeout(sendHeight, 100);
-    });
+    // Watch for content changes using ResizeObserver (debounced)
+    const resizeObserver = new ResizeObserver(debouncedSendHeight);
     
     // Observe the main container instead of body
     const mainContainer = document.querySelector('.min-h-screen');
@@ -66,7 +68,8 @@ function App() {
 
     // Cleanup function
     return () => {
-      window.removeEventListener('resize', sendHeight);
+      clearTimeout(resizeTimeout);
+      window.removeEventListener('resize', debouncedSendHeight);
       resizeObserver.disconnect();
     };
   }, []); // Empty dependency array means this runs once on mount
