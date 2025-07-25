@@ -19,32 +19,50 @@ function App() {
   // Iframe resize functionality
   useEffect(() => {
     const sendHeight = () => {
-      const height = Math.max(
-        document.body.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.clientHeight,
-        document.documentElement.scrollHeight,
-        document.documentElement.offsetHeight
-      );
+      // Get the main content container (the div with min-h-screen)
+      const mainContainer = document.querySelector('.min-h-screen');
+      
+      let height;
+      if (mainContainer) {
+        // Use the actual content height, not the min-height
+        const rect = mainContainer.getBoundingClientRect();
+        const computedStyle = window.getComputedStyle(mainContainer);
+        const paddingTop = parseFloat(computedStyle.paddingTop);
+        const paddingBottom = parseFloat(computedStyle.paddingBottom);
+        
+        // Calculate the actual content height
+        height = mainContainer.scrollHeight;
+      } else {
+        // Fallback to body height if main container not found
+        height = document.body.scrollHeight;
+      }
       
       window.parent.postMessage({
         type: 'resize',
-        height: height + 20 // Adding small buffer for safety
+        height: height + 10 // Small buffer, reduced from 20
       }, '*');
     };
 
-    // Send initial height after a small delay to ensure content is rendered
-    setTimeout(sendHeight, 100);
+    // Send initial height after content is fully rendered
+    setTimeout(sendHeight, 200);
 
     // Listen for window resize
-    window.addEventListener('resize', sendHeight);
+    window.addEventListener('resize', () => {
+      setTimeout(sendHeight, 100);
+    });
 
     // Watch for content changes using ResizeObserver
     const resizeObserver = new ResizeObserver(() => {
-      setTimeout(sendHeight, 50); // Small delay for layout to settle
+      setTimeout(sendHeight, 100);
     });
     
-    resizeObserver.observe(document.body);
+    // Observe the main container instead of body
+    const mainContainer = document.querySelector('.min-h-screen');
+    if (mainContainer) {
+      resizeObserver.observe(mainContainer);
+    } else {
+      resizeObserver.observe(document.body);
+    }
 
     // Cleanup function
     return () => {
