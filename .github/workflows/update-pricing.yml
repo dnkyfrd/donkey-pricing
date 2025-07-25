@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify node-fetch installation
+        run: node -e "console.log('node-fetch version:', require('node-fetch/package.json').version)"
+
       - name: Generate pricing.json
         run: node scripts/generatePricingJsonStandalone.cjs
 
