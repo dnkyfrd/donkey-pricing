@@ -22,7 +22,11 @@ jobs:
         run: npm ci
 
       - name: Generate pricing.json
+<<<<<<< HEAD
         run: node scripts/generatePricingJsonStandalone.cjs
+=======
+        run: npx ts-node scripts/generatePricingJson.ts
+>>>>>>> 1c64f1ebbc65a62610be5d66a141c95596db8cb9
 
       - name: Commit and push if changed
         run: |
