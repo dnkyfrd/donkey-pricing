@@ -16,63 +16,68 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   // No geolocation: default selection only
 
-  // Iframe resize functionality
+  // FIXED: Improved iframe resize functionality
   useEffect(() => {
-    let lastHeight = 0;
     let resizeTimeout: NodeJS.Timeout;
 
     const sendHeight = () => {
-      // Get the main content container (the div with min-h-screen)
-      const mainContainer = document.querySelector('.min-h-screen');
-      
-      let height;
-      if (mainContainer) {
-        // Calculate the actual content height
-        height = mainContainer.scrollHeight;
-      } else {
-        // Fallback to body height if main container not found
-        height = document.body.scrollHeight;
-      }
-      
-      // Only send if height has changed significantly (prevent infinite loops)
-      if (Math.abs(height - lastHeight) > 5) {
-        lastHeight = height;
+      // Wait for next tick to ensure DOM is fully rendered
+      requestAnimationFrame(() => {
+        // Get the actual content height by measuring the main container
+        const mainContainer = document.querySelector('.app-container');
+        
+        let height;
+        if (mainContainer) {
+          // Get the bounding rect to get the actual rendered height
+          const rect = mainContainer.getBoundingClientRect();
+          height = Math.ceil(rect.height);
+        } else {
+          // Fallback: measure body's scroll height but ensure it's not forced by min-height
+          height = Math.max(
+            document.body.scrollHeight,
+            document.body.offsetHeight,
+            document.documentElement.clientHeight,
+            document.documentElement.scrollHeight,
+            document.documentElement.offsetHeight
+          );
+        }
+        
+        // Send the height to parent window
         window.parent.postMessage({
           type: 'resize',
-          height: height + 10
+          height: height
         }, '*');
-      }
+      });
     };
 
     const debouncedSendHeight = () => {
       clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(sendHeight, 150);
+      resizeTimeout = setTimeout(sendHeight, 100); // Reduced debounce time
     };
 
-    // Send initial height after content is fully rendered
-    setTimeout(sendHeight, 300);
+    // Send initial height after a short delay to ensure content is rendered
+    const initialTimeout = setTimeout(sendHeight, 500);
 
-    // Listen for window resize (debounced)
+    // Listen for window resize
     window.addEventListener('resize', debouncedSendHeight);
 
-    // Watch for content changes using ResizeObserver (debounced)
-    const resizeObserver = new ResizeObserver(debouncedSendHeight);
-    
-    // Observe the main container instead of body
-    const mainContainer = document.querySelector('.min-h-screen');
-    if (mainContainer) {
-      resizeObserver.observe(mainContainer);
-    } else {
-      resizeObserver.observe(document.body);
-    }
+    // Use MutationObserver to watch for DOM changes
+    const observer = new MutationObserver(debouncedSendHeight);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['class', 'style']
+    });
 
     // Cleanup function
     return () => {
       clearTimeout(resizeTimeout);
+      clearTimeout(initialTimeout);
       window.removeEventListener('resize', debouncedSendHeight);
-      resizeObserver.disconnect();
+      observer.disconnect();
     };
-  }, []); // Empty dependency array means this runs once on mount
+  }, [pricingData]); // Re-run when pricing data changes
 
   const countries = Object.keys(groupedCities);
   const cities = React.useMemo(() => selectedCountry ? groupedCities[selectedCountry] || [] : [], [selectedCountry]);
@@ -167,7 +172,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50/30 py-8">
+    {/* FIXED: Removed min-h-screen and replaced with app-container class */}
+    <div className="app-container bg-gradient-to-br from-slate-50 to-blue-50/30 py-8">
       {/* Location Selector */}
       <section className="pb-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
