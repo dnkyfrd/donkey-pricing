@@ -1,0 +1,6813 @@
+{
+  "Lausanne EPFL": {
+    "memberships": [
+      {
+        "id": 2176,
+        "name": "Pay as you go",
+        "price": 8,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2177,
+        "name": "Daily Rider",
+        "price": 15,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2178,
+        "name": "Commuter",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [],
+    "dayDeals": [],
+    "warning": "No justRide. No dayDeals."
+  },
+  "Oegstgeest": {
+    "memberships": [
+      {
+        "id": 3302,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 85% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2480,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2478,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 732,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "0.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 9
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 103,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 104,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "14.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 105,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "17.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 106,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Leiden": {
+    "memberships": [
+      {
+        "id": 3302,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 85% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2480,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2478,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 732,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "0.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 9
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 103,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 104,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "14.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 105,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "17.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 106,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Katwijk": {
+    "memberships": [
+      {
+        "id": 3302,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 85% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2480,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2478,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 732,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "0.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 9
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 103,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 104,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "14.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 105,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "17.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 106,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Mechelen Region": {
+    "memberships": [
+      {
+        "id": 2233,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 1 uur ",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2141,
+        "name": " E-bike: 10 ritten van 30 min ",
+        "price": 20,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2139,
+        "name": "E-bike: 40 ritten van 30 min",
+        "price": 72,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2235,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 1 uur ",
+        "price": 90,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2312,
+        "name": "E-bike: 20 ritten van 12 uur",
+        "price": 109,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2142,
+        "name": " E-bike: 120 ritten van 30 min ",
+        "price": 195,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2140,
+        "name": "E-bike: 400 ritten van 30 min ",
+        "price": 600,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 534,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 30,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.8",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "3.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "4.6",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "5.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "6.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 10080,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 7
+      },
+      {
+        "id": 535,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 30,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 10080,
+            "price": "72.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 91,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "7.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 92,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "12.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 88,
+        "vehicle_type": "ebike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S",
+          "ebike": "PT86400S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 24,
+        "title": "E-bike"
+      },
+      {
+        "id": 93,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "16.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 89,
+        "vehicle_type": "ebike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S",
+          "ebike": "PT172800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 48,
+        "title": "E-bike"
+      },
+      {
+        "id": 90,
+        "vehicle_type": "ebike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S",
+          "ebike": "PT259200S"
+        },
+        "price": "34.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 72,
+        "title": "E-bike"
+      }
+    ]
+  },
+  "Schlei Region": {
+    "memberships": [
+      {
+        "id": 2666,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 633,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "0.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 12
+      },
+      {
+        "id": 637,
+        "vehicle_type": "cargo",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "13.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 450,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 15
+      },
+      {
+        "id": 634,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "22.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "28.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 450,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      },
+      {
+        "id": 638,
+        "vehicle_type": "ecargo",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "22.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "28.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 450,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Helsingør": {
+    "memberships": [
+      {
+        "id": 3230,
+        "name": "Pay as you go",
+        "price": 25,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 80% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2927,
+        "name": "Daily Rider",
+        "price": 115,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2395,
+        "name": "Commuter",
+        "price": 189,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 29,
+        "vehicle_type": "bike",
+        "currency": "DKK",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "4.0",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "12.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "12.0",
+          "max_price_per_normalization_period_in_major_units": "250.0"
+        }
+      },
+      {
+        "id": 254,
+        "vehicle_type": "ebike",
+        "currency": "DKK",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "4.0",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "20.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "20.0",
+          "max_price_per_normalization_period_in_major_units": "425.0"
+        }
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 67,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "39.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 64,
+        "vehicle_type": "ebike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S",
+          "ebike": "PT3600S"
+        },
+        "price": "49.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 24,
+        "title": "E-bike"
+      },
+      {
+        "id": 68,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "79.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": "Special offer",
+        "name": "Copenpay 3-hour pass",
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 65,
+        "vehicle_type": "ebike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S",
+          "ebike": "PT10800S"
+        },
+        "price": "99.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": "Special offer",
+        "name": "Copenpay 3-hour pass",
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 72,
+        "title": "E-bike"
+      },
+      {
+        "id": 69,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "99.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 129,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "129.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 66,
+        "vehicle_type": "ebike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S",
+          "ebike": "PT18000S"
+        },
+        "price": "159.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 168,
+        "title": "E-bike"
+      }
+    ]
+  },
+  "Hanover": {
+    "memberships": [
+      {
+        "id": 2814,
+        "name": "Daily Rider- 2 Stunden pro Miete kostenlos radeln! ",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "Fahre die ersten 2 Stunden deiner Miete kostenlos. ",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 684,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 45,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 75,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 105,
+            "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 135,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 165,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 195,
+            "price": "13.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 225,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 5
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 79,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "3.5",
+        "currency": "EUR",
+        "account_id": 889,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 80,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 889,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 81,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "12.0",
+        "currency": "EUR",
+        "account_id": 889,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Waasland": {
+    "memberships": [
+      {
+        "id": 2233,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 1 uur ",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2236,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 12 uur ",
+        "price": 14,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2141,
+        "name": " E-bike: 10 ritten van 30 min ",
+        "price": 20,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2139,
+        "name": "E-bike: 40 ritten van 30 min",
+        "price": 72,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2235,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 1 uur ",
+        "price": 90,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2312,
+        "name": "E-bike: 20 ritten van 12 uur",
+        "price": 109,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2142,
+        "name": " E-bike: 120 ritten van 30 min ",
+        "price": 195,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2140,
+        "name": "E-bike: 400 ritten van 30 min ",
+        "price": 600,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 534,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 30,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.8",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "3.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "4.6",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "5.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "6.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 10080,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 7
+      },
+      {
+        "id": 535,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 30,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 10080,
+            "price": "72.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 91,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "7.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 92,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "12.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 88,
+        "vehicle_type": "ebike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S",
+          "ebike": "PT86400S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 24,
+        "title": "E-bike"
+      },
+      {
+        "id": 93,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "16.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 89,
+        "vehicle_type": "ebike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S",
+          "ebike": "PT172800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 48,
+        "title": "E-bike"
+      },
+      {
+        "id": 90,
+        "vehicle_type": "ebike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S",
+          "ebike": "PT259200S"
+        },
+        "price": "34.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 72,
+        "title": "E-bike"
+      }
+    ]
+  },
+  "Kreuzlingen": {
+    "memberships": [
+      {
+        "id": 2176,
+        "name": "Pay as you go",
+        "price": 8,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2177,
+        "name": "Daily Rider",
+        "price": 15,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2178,
+        "name": "Commuter",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 337,
+        "vehicle_type": "bike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "1.5",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 45,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.5",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "4.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "7.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "9.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "11.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "12.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 480,
+            "price": "13.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 600,
+            "price": "15.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "17.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "25.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 15
+      },
+      {
+        "id": 520,
+        "vehicle_type": "ebike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "3.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 45,
+            "price": "4.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "6.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "8.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "10.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "14.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "18.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "22.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "24.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 480,
+            "price": "27.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 600,
+            "price": "30.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "32.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "45.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 35
+      },
+      {
+        "id": 718,
+        "vehicle_type": "ecargo",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "3.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "4.5",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 45,
+            "price": "6.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "8.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "10.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "13.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "18.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "23.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "28.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "33.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 480,
+            "price": "38.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 600,
+            "price": "40.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "48.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "55.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 45
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Prignitz": {
+    "memberships": [
+      {
+        "id": 2370,
+        "name": "Onkel Dagobert Tarif ",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "15 Freiminuten/ Tag, danach fahren zum halben Preis",
+        "popular": false
+      },
+      {
+        "id": 2369,
+        "name": "Speedy Gonzales Tarif ",
+        "price": 9,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "120 Freiminuten/ Tag danach fallen Just-ride-Preise an",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 411,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "0.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 10
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 123,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "14.9",
+        "currency": "EUR",
+        "account_id": 702,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Thun": {
+    "memberships": [
+      {
+        "id": 1718,
+        "name": "Bikesharing-Monatsabo Thun",
+        "price": 15,
+        "currency": "CHF",
+        "period": "month",
+        "short_description": "1h jeder Velofahrt gratis und 5x30min kostenlose E-Bike-Fahrten / Haftungsbeschränkung inbegriffen",
+        "popular": false
+      },
+      {
+        "id": 664,
+        "name": "Jahresmitgliedschaft Thun",
+        "price": 60,
+        "currency": "CHF",
+        "period": "year",
+        "short_description": "1h jeder Velofahrt gratis und 50x30min kostenlose E-Bike-Fahrten / Haftungsbeschränkung inbegriffen",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 274,
+        "vehicle_type": "bike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "4.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "6.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "8.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "15.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "20.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "40.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "60.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 15
+      },
+      {
+        "id": 400,
+        "vehicle_type": "ebike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "3.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "6.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "10.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "15.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "18.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "25.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "60.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "80.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      },
+      {
+        "id": 821,
+        "vehicle_type": "ecargo",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 60,
+            "price": "8.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "14.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "18.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "22.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "26.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "30.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "34.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 480,
+            "price": "38.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 540,
+            "price": "42.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 600,
+            "price": "44.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "50.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Dordecht": {
+    "memberships": [
+      {
+        "id": 2701,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2026,
+        "name": "Daily Rider ",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2702,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2027,
+        "name": "Drechtsteden 12U",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 632,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.3",
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "1.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "17.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 7
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Le Locle": {
+    "memberships": [
+      {
+        "id": 2176,
+        "name": "Pay as you go",
+        "price": 8,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2177,
+        "name": "Daily Rider",
+        "price": 15,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2178,
+        "name": "Commuter",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [],
+    "dayDeals": [],
+    "warning": "No justRide. No dayDeals."
+  },
+  "Veurne": {
+    "memberships": [
+      {
+        "id": 2603,
+        "name": "Pendelaars - 1 uur gratis per rit",
+        "price": 9,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2604,
+        "name": "Pendelaars - 12 uur gratis per rit",
+        "price": 14,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 639,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "0.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 6
+      },
+      {
+        "id": 640,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "50.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 107,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "5.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 108,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 109,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 110,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "20.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Koksijde": {
+    "memberships": [
+      {
+        "id": 2603,
+        "name": "Pendelaars - 1 uur gratis per rit",
+        "price": 9,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2604,
+        "name": "Pendelaars - 12 uur gratis per rit",
+        "price": 14,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 639,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "0.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 6
+      },
+      {
+        "id": 640,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "50.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 107,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "5.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 108,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 109,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 110,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "20.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "De Panne": {
+    "memberships": [
+      {
+        "id": 2603,
+        "name": "Pendelaars - 1 uur gratis per rit",
+        "price": 9,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2604,
+        "name": "Pendelaars - 12 uur gratis per rit",
+        "price": 14,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 639,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "0.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 6
+      },
+      {
+        "id": 640,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "50.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 107,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "5.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 108,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 109,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 110,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "20.0",
+        "currency": "EUR",
+        "account_id": 868,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Kiel Region": {
+    "memberships": [
+      {
+        "id": 2666,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 633,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "0.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 12
+      },
+      {
+        "id": 637,
+        "vehicle_type": "cargo",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "13.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 450,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 15
+      },
+      {
+        "id": 634,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "22.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "28.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 450,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      },
+      {
+        "id": 638,
+        "vehicle_type": "ecargo",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 210,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 300,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 330,
+            "price": "22.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 420,
+            "price": "28.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 450,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Turku": {
+    "memberships": [],
+    "justRide": [
+      {
+        "id": 665,
+        "vehicle_type": "ecargo",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "4.0",
+        "reservation_time_minutes": 180,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 60,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 180,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 20
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No memberships. No dayDeals."
+  },
+  "Genf": {
+    "memberships": [
+      {
+        "id": 2447,
+        "name": "Abonnement mensuel 2h - vélo traditionnel",
+        "price": 15,
+        "currency": "CHF",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2448,
+        "name": "Abonnement mensuel 12h - vélo traditionnel",
+        "price": 22,
+        "currency": "CHF",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2449,
+        "name": "Abonnement mensuel de 2h - vélo traditionnel et vélo électrique",
+        "price": 35,
+        "currency": "CHF",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2450,
+        "name": "Abonnement mensuel de 12h - vélo traditionnel et vélo électrique",
+        "price": 60,
+        "currency": "CHF",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 328,
+        "vehicle_type": "bike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.5",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.3",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.9",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.5",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "11.7",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "13.8",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "23.4",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "31.9",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 7.4
+      },
+      {
+        "id": 329,
+        "vehicle_type": "ebike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "3.1",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "5.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "7.5",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "12.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "18.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "24.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "48.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "96.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "192.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "288.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 96
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 82,
+        "vehicle_type": "ebike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S",
+          "ebike": "PT3600S"
+        },
+        "price": "7.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 24,
+        "title": "E-bike"
+      },
+      {
+        "id": 124,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 125,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "14.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 83,
+        "vehicle_type": "ebike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S",
+          "ebike": "PT10800S"
+        },
+        "price": "16.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 72,
+        "title": "E-bike"
+      },
+      {
+        "id": 126,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "19.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 84,
+        "vehicle_type": "ebike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S",
+          "ebike": "PT18000S"
+        },
+        "price": "20.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 168,
+        "title": "E-bike"
+      },
+      {
+        "id": 127,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "25.0",
+        "currency": "CHF",
+        "account_id": 627,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Amsterdam": {
+    "memberships": [
+      {
+        "id": 3302,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 85% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2480,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2478,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 77,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "2.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "2.0",
+          "max_price_per_normalization_period_in_major_units": "24.0"
+        }
+      },
+      {
+        "id": 525,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "3.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "3.0",
+          "max_price_per_normalization_period_in_major_units": "36.0"
+        }
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 94,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 381,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Ochtrup": {
+    "memberships": [
+      {
+        "id": 2666,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 469,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "13.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 13
+      },
+      {
+        "id": 521,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "13.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "30.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 30
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Ven": {
+    "memberships": [
+      {
+        "id": 2176,
+        "name": "Pay as you go",
+        "price": 8,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2177,
+        "name": "Daily Rider",
+        "price": 15,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2178,
+        "name": "Commuter",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [],
+    "dayDeals": [],
+    "warning": "No justRide. No dayDeals."
+  },
+  "Antwerp": {
+    "memberships": [
+      {
+        "id": 2233,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 1 uur ",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2236,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 12 uur ",
+        "price": 14,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2141,
+        "name": " E-bike: 10 ritten van 30 min ",
+        "price": 20,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2139,
+        "name": "E-bike: 40 ritten van 30 min",
+        "price": 72,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2235,
+        "name": "Gewone fiets: onbeperkt aantal ritten van 1 uur ",
+        "price": 90,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2312,
+        "name": "E-bike: 20 ritten van 12 uur",
+        "price": 109,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2142,
+        "name": " E-bike: 120 ritten van 30 min ",
+        "price": 195,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2140,
+        "name": "E-bike: 400 ritten van 30 min ",
+        "price": 600,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 534,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 30,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.8",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "2.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "3.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "4.6",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "5.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "6.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "16.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 10080,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 7
+      },
+      {
+        "id": 535,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 30,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 10080,
+            "price": "72.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 91,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "7.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 92,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "12.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 88,
+        "vehicle_type": "ebike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S",
+          "ebike": "PT86400S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 24,
+        "title": "E-bike"
+      },
+      {
+        "id": 93,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "16.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 89,
+        "vehicle_type": "ebike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S",
+          "ebike": "PT172800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 48,
+        "title": "E-bike"
+      },
+      {
+        "id": 90,
+        "vehicle_type": "ebike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S",
+          "ebike": "PT259200S"
+        },
+        "price": "34.0",
+        "currency": "EUR",
+        "account_id": 803,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 72,
+        "title": "E-bike"
+      }
+    ]
+  },
+  "Varberg": {
+    "memberships": [
+      {
+        "id": 2176,
+        "name": "Pay as you go",
+        "price": 8,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2177,
+        "name": "Daily Rider",
+        "price": 15,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2178,
+        "name": "Commuter",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 398,
+        "vehicle_type": "bike",
+        "currency": "SEK",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "20.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "16.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "25.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "50.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "70.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "110.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "150.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "200.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "240.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "380.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "520.0",
+            "currency": "SEK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 140
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Straubing": {
+    "memberships": [
+      {
+        "id": 2706,
+        "name": "Jährliche Mitgliedschaft Straubing- 30 min pro Tag gratis radeln",
+        "price": 14.9,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "30 min gratis radel pro Tag",
+        "popular": false
+      },
+      {
+        "id": 3108,
+        "name": "Pendel-Donkeys- radel 50x 30 Minuten kostenlos auf allen E-Bikes und täglich 30 Minuten auf allen P-Bikes. ",
+        "price": 49.9,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 412,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "0.75",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.8",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "4.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "8.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "20.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 5
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "Randers": {
+    "memberships": [
+      {
+        "id": 3230,
+        "name": "Pay as you go",
+        "price": 25,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 80% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2927,
+        "name": "Daily Rider",
+        "price": 115,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2395,
+        "name": "Commuter",
+        "price": 189,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 347,
+        "vehicle_type": "bike",
+        "currency": "DKK",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": "1.0",
+        "reservation_time_minutes": 1,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "0.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 45,
+            "price": "17.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "22.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 90,
+            "price": "33.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 150,
+            "price": "55.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 270,
+            "price": "66.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 390,
+            "price": "77.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 750,
+            "price": "95.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "110.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "195.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "255.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 60
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
+  "The Hague": {
+    "memberships": [
+      {
+        "id": 3302,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 85% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2480,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2478,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 339,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.7",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "2.2",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 9
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 100,
+        "vehicle_type": "bike",
+        "duration": "PT360M",
+        "free_time": {
+          "bike": "PT21600S"
+        },
+        "price": "7.0",
+        "currency": "EUR",
+        "account_id": 634,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 6,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 101,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 634,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 102,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "19.0",
+        "currency": "EUR",
+        "account_id": 634,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Ghent": {
+    "memberships": [
+      {
+        "id": 2482,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2483,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2484,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 102,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.7",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "2.2",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 9
+      },
+      {
+        "id": 685,
+        "vehicle_type": "ebike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "4.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.9",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.4",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "12.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 14
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 95,
+        "vehicle_type": "bike",
+        "duration": "PT360M",
+        "free_time": {
+          "bike": "PT21600S"
+        },
+        "price": "7.0",
+        "currency": "EUR",
+        "account_id": 486,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 6,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 96,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 486,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 97,
+        "vehicle_type": "bike",
+        "duration": "PT2880M",
+        "free_time": {
+          "bike": "PT172800S"
+        },
+        "price": "14.0",
+        "currency": "EUR",
+        "account_id": 486,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 98,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "17.0",
+        "currency": "EUR",
+        "account_id": 486,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 99,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT604800S"
+        },
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 486,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Rotterdam": {
+    "memberships": [
+      {
+        "id": 2480,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2478,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 93,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "1.7",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "2.2",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "3.3",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "5.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "7.5",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "9.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "24.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 9
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 120,
+        "vehicle_type": "bike",
+        "duration": "PT360M",
+        "free_time": {
+          "bike": "PT21600S"
+        },
+        "price": "7.0",
+        "currency": "EUR",
+        "account_id": 402,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 6,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 121,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 402,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 122,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "19.0",
+        "currency": "EUR",
+        "account_id": 402,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Barcelona": {
+    "memberships": [
+      {
+        "id": 2059,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing<br><br>Pedalea por un precio fijo bajo y ahorra hasta un 85% en costes de alquiler en comparación con nuestros precios habituales de Just Ride.",
+        "popular": false
+      },
+      {
+        "id": 2060,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day<br><br>Disfruta de 2 horas de tiempo libre al día, para los que necesitan una bici con frecuencia",
+        "popular": false
+      },
+      {
+        "id": 2061,
+        "name": "Commuter",
+        "price": 19,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day<br><br>Conserva la bici más tiempo y disfruta de 12 horas de tiempo libre al día",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 80,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "1.5",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "1.5",
+          "max_price_per_normalization_period_in_major_units": "25.0"
+        }
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 163,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "4.99",
+        "currency": "EUR",
+        "account_id": 125,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 165,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "15.99",
+        "currency": "EUR",
+        "account_id": 125,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 168,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "19.99",
+        "currency": "EUR",
+        "account_id": 125,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      }
+    ]
+  },
+  "Copenhagen": {
+    "memberships": [
+      {
+        "id": 3230,
+        "name": "Pay as you go",
+        "price": 25,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Ride more, pay less — save up to 80% compared to Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 2927,
+        "name": "Daily Rider",
+        "price": 115,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
+        "popular": false
+      },
+      {
+        "id": 2395,
+        "name": "Commuter",
+        "price": 189,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 29,
+        "vehicle_type": "bike",
+        "currency": "DKK",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "4.0",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "12.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "12.0",
+          "max_price_per_normalization_period_in_major_units": "250.0"
+        }
+      },
+      {
+        "id": 254,
+        "vehicle_type": "ebike",
+        "currency": "DKK",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "4.0",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "20.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "20.0",
+          "max_price_per_normalization_period_in_major_units": "425.0"
+        }
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 67,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "39.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 64,
+        "vehicle_type": "ebike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S",
+          "ebike": "PT3600S"
+        },
+        "price": "49.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 24,
+        "title": "E-bike"
+      },
+      {
+        "id": 68,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "79.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": "Special offer",
+        "name": "Copenpay 3-hour pass",
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 65,
+        "vehicle_type": "ebike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S",
+          "ebike": "PT10800S"
+        },
+        "price": "99.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": "Special offer",
+        "name": "Copenpay 3-hour pass",
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 72,
+        "title": "E-bike"
+      },
+      {
+        "id": 69,
+        "vehicle_type": "bike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "99.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 168,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 129,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "129.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 66,
+        "vehicle_type": "ebike",
+        "duration": "PT10080M",
+        "free_time": {
+          "bike": "PT18000S",
+          "ebike": "PT18000S"
+        },
+        "price": "159.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 168,
+        "title": "E-bike"
+      }
+    ]
+  },
+  "Roskilde": {
+    "memberships": [
+      {
+        "id": 2050,
+        "name": "Bike - 1 hour free w/ every rental",
+        "price": 139,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 2051,
+        "name": "Bike - 12 hrs free w/ every rental",
+        "price": 210,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Valid in all cities",
+        "popular": false
+      },
+      {
+        "id": 2052,
+        "name": "Bike - 7 days free w/ every rental",
+        "price": 250,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 137,
+        "vehicle_type": "bike",
+        "currency": "DKK",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "15.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "22.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "35.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "60.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "75.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "90.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "110.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "130.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "175.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "230.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 55
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  }
+}
