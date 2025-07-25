@@ -14,70 +14,114 @@ function App() {
   const [allPricing, setAllPricing] = useState<Record<string, any> | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  // No geolocation: default selection only
 
-  // FIXED: Improved iframe resize functionality
+  // REFINED: Ultra-precise iframe resize functionality to eliminate scrollbars
   useEffect(() => {
     let resizeTimeout: NodeJS.Timeout;
+    let lastSentHeight = 0;
 
-    const sendHeight = () => {
-      // Wait for next tick to ensure DOM is fully rendered
-      requestAnimationFrame(() => {
-        // Get the actual content height by measuring the main container
-        const mainContainer = document.querySelector('.app-container');
-        
-        let height;
-        if (mainContainer) {
-          // Get the bounding rect to get the actual rendered height
-          const rect = mainContainer.getBoundingClientRect();
-          height = Math.ceil(rect.height);
-        } else {
-          // Fallback: measure body's scroll height but ensure it's not forced by min-height
-          height = Math.max(
-            document.body.scrollHeight,
-            document.body.offsetHeight,
-            document.documentElement.clientHeight,
-            document.documentElement.scrollHeight,
-            document.documentElement.offsetHeight
-          );
-        }
-        
-        // Send the height to parent window
-        window.parent.postMessage({
-          type: 'resize',
-          height: height
-        }, '*');
+    const calculatePreciseHeight = () => {
+      // Wait for all rendering to complete
+      return new Promise<number>((resolve) => {
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            // Try multiple height calculation methods and use the most accurate
+            const body = document.body;
+            const html = document.documentElement;
+            const appContainer = document.querySelector('.app-container');
+            
+            let heights = [];
+            
+            // Method 1: App container bounding rect (most accurate for content)
+            if (appContainer) {
+              const rect = appContainer.getBoundingClientRect();
+              heights.push(rect.height);
+            }
+            
+            // Method 2: Body scroll height
+            heights.push(body.scrollHeight);
+            
+            // Method 3: Document element scroll height
+            heights.push(html.scrollHeight);
+            
+            // Method 4: Body offset height
+            heights.push(body.offsetHeight);
+            
+            // Method 5: Document element offset height
+            heights.push(html.offsetHeight);
+            
+            // Use the maximum height to ensure no content is cut off
+            const maxHeight = Math.max(...heights);
+            
+            // Add a small buffer to account for any browser rendering differences
+            const finalHeight = Math.ceil(maxHeight) + 5;
+            
+            resolve(finalHeight);
+          });
+        });
       });
+    };
+
+    const sendHeight = async () => {
+      try {
+        const height = await calculatePreciseHeight();
+        
+        // Only send if height has changed significantly
+        if (Math.abs(height - lastSentHeight) > 3) {
+          lastSentHeight = height;
+          
+          window.parent.postMessage({
+            type: 'resize',
+            height: height,
+            timestamp: Date.now()
+          }, '*');
+        }
+      } catch (error) {
+        console.warn('Height calculation error:', error);
+      }
     };
 
     const debouncedSendHeight = () => {
       clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(sendHeight, 100); // Reduced debounce time
+      resizeTimeout = setTimeout(sendHeight, 50); // Reduced debounce for faster response
     };
 
-    // Send initial height after a short delay to ensure content is rendered
-    const initialTimeout = setTimeout(sendHeight, 500);
+    // Send initial height after content is fully loaded
+    const initialTimeout = setTimeout(sendHeight, 300);
+    
+    // Send height again after a longer delay to catch any late-loading content
+    const secondaryTimeout = setTimeout(sendHeight, 1000);
 
     // Listen for window resize
     window.addEventListener('resize', debouncedSendHeight);
 
-    // Use MutationObserver to watch for DOM changes
+    // Use MutationObserver to watch for any DOM changes
     const observer = new MutationObserver(debouncedSendHeight);
     observer.observe(document.body, {
       childList: true,
       subtree: true,
       attributes: true,
-      attributeFilter: ['class', 'style']
+      attributeFilter: ['class', 'style', 'height'],
+      characterData: true
     });
+
+    // Also listen for image load events that might change height
+    const handleImageLoad = () => {
+      debouncedSendHeight();
+    };
+    
+    document.addEventListener('load', handleImageLoad, true);
 
     // Cleanup function
     return () => {
       clearTimeout(resizeTimeout);
       clearTimeout(initialTimeout);
+      clearTimeout(secondaryTimeout);
       window.removeEventListener('resize', debouncedSendHeight);
+      document.removeEventListener('load', handleImageLoad, true);
       observer.disconnect();
     };
-  }, [pricingData]); // Re-run when pricing data changes
+  }, [pricingData, loading, error]); // Re-run when content changes
 
   const countries = Object.keys(groupedCities);
   const cities = React.useMemo(() => selectedCountry ? groupedCities[selectedCountry] || [] : [], [selectedCountry]);
@@ -126,7 +170,6 @@ function App() {
     }
   }, [allPricing, selectedCity]);
 
-
   // Always round up to nearest integer for Just Ride pricing
   const formatPrice = (price: number, currency: string = 'EUR') => `${Math.ceil(Number(price))} ${currency}`;
 
@@ -172,8 +215,14 @@ function App() {
   };
 
   return (
-    {/* FIXED: Removed min-h-screen and replaced with app-container class */}
-    <div className="app-container bg-gradient-to-br from-slate-50 to-blue-50/30 py-8">
+    {/* REFINED: Optimized container with precise height control */}
+    <div className="app-container bg-gradient-to-br from-slate-50 to-blue-50/30 py-8" style={{
+      minHeight: 'auto',
+      height: 'auto',
+      overflow: 'visible',
+      margin: 0,
+      padding: '2rem 0'
+    }}>
       {/* Location Selector */}
       <section className="pb-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
