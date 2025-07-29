@@ -104,6 +104,13 @@ function App() {
   // Always round up to nearest integer for Just Ride pricing
   const formatPrice = (price: number, currency: string = 'EUR') => `${Math.ceil(Number(price))} ${currency}`;
 
+  function getFreeTimeLabel(value: string | undefined): string {
+    if (!value || typeof value !== 'string') return '';
+    const seconds = parseInt(value.replace('PT', '').replace('S', ''), 10);
+    const hours = seconds / 3600;    
+    return `${hours} hour${hours !== 1 ? 's' : ''}`;
+  }
+
   const getDurationLabel = (minutes: number) => {
   if (minutes >= 60) {
     const hours = minutes / 60;
@@ -255,7 +262,7 @@ function App() {
             </div>
 
             {/* Side-by-side bike/ebike */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className={`grid gap-6 ${pricingData.justRide.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
               {[...pricingData.justRide]
                 .sort((a, b) => {
                   // Pedal bike (bike) first, then E-bike
@@ -287,10 +294,7 @@ function App() {
                       )}
                       <div className="text-base font-bold text-slate-900 mb-1">
                         {`${formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency)} every ${Number(pricing.duration.interval_length_minutes)} minutes`}
-                      </div>
-                      <div className="text-sm text-slate-600">
-                        {`Max ${formatPrice(Number(pricing.duration.max_price_per_normalization_period_in_major_units), pricing.currency)} per day`}
-                      </div>
+                      </div>                     
                     </div>
                   ) : (
                     <div className="grid grid-cols-2 md:grid-cols-2 gap-3 mb-4">
@@ -359,6 +363,13 @@ function App() {
                 <div className="text-center mb-6">
                   <h2 className="text-2xl font-bold text-slate-900 mb-2">Memberships</h2>
                   <p className="text-slate-600">Save more with our membership plans</p>
+                  <button
+                      className="w-80 mt-5 px-3 py-2 rounded-lg text-sm font-semibold transition-all bg-slate-800 text-white hover:bg-slate-700"
+                      style={{ backgroundColor: '#ff6400' }}
+                      onClick={() => window.open('https://dnky.bike/7jIsFIUKoHb', '_blank', 'noopener,noreferrer')}
+                    >
+                      Get Started
+                    </button>
                 </div>
 
                 <div className="space-y-4">
@@ -390,18 +401,6 @@ function App() {
                             <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
                             <div className="text-xs text-slate-600">/{membership.period}</div>
                           </div>
-                          
-                          <button
-                            className={`w-full px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
-                              membership.popular
-                                ? 'text-white'
-                                : 'bg-slate-800 text-white hover:bg-slate-700'
-                            }`}
-                            style={membership.popular ? { backgroundColor: '#ff6400' } : {}}
-                            onClick={() => window.open('https://dnky.bike/7jIsFIUKoHb', '_blank', 'noopener,noreferrer')}
-                          >
-                            Get Started
-                          </button>
                         </div>
                       ))}
                     </div>
@@ -414,8 +413,18 @@ function App() {
             {pricingData && (
               <div>
                 <div className="text-center mb-6">
-                  <h2 className="text-2xl font-bold text-slate-900 mb-2">Day Passes</h2>
+                  <h2 className="text-2xl font-bold text-slate-900 mb-2">Passes</h2>
                   <p className="text-slate-600">Perfect for day trip or weekend adventures.</p>
+
+                  {pricingData.dayDeals.length > 0 ? (
+                  <button
+                      className="w-80 mt-5 px-3 py-2 rounded-lg text-sm font-semibold transition-all bg-slate-800 text-white hover:bg-slate-700"
+                      style={{ backgroundColor: '#ff6400' }}
+                      onClick={() => window.open('https://dnky.bike/7jIsFIUKoHb', '_blank', 'noopener,noreferrer')}
+                    >
+                      Get Pass
+                    </button>
+                  ) : ''}
                 </div>
                 {pricingData.dayDeals.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -428,7 +437,7 @@ function App() {
   })
   .map((dayDeal) => {
                       const Icon = getBikeTypeIcon(dayDeal.bike_type ?? '');
-                      const isEBike = (dayDeal.bike_type ?? '').toLowerCase().includes('e') || (dayDeal.bike_type ?? '').toLowerCase().includes('electric');
+                      const isEBike = (dayDeal.bike_type ?? '').toLowerCase() === 'ebike';
                       return (
                         <div key={dayDeal.id} className="bg-white rounded-xl border border-slate-200/50 p-6 flex flex-col items-center hover:shadow-lg hover:border-orange-200 transition-all">
   {/* Row 1: Icon and bike type label */}
@@ -441,19 +450,14 @@ function App() {
   <div className="text-xl font-bold text-slate-900 mb-1 text-center">{formatPrice(dayDeal.price, dayDeal.currency)}</div>
 
   {/* Row 3: Duration */}
-  <div className="text-sm text-slate-600 mb-4 text-center">{getDurationLabel((dayDeal.duration_hours ?? 0) * 60)} unlimited</div>
+  <div className="text-sm text-slate-600 mb-2 mt-3 text-center">
+  {dayDeal.free_time?.[isEBike ? 'ebike' : 'bike']
+    ? `${getFreeTimeLabel(dayDeal.free_time[isEBike ? 'ebike' : 'bike'])} of riding time`
+    : ''}
+</div>
+  <div className="text-sm text-slate-600 mb-4 text-center">Valid for {getDurationLabel((dayDeal.duration_hours ?? 0) * 60)}</div>
 
-  {/* Row 4: Button */}
-  <a href="https://dnky.bike/7jIsFIUKoHb" target="_blank" rel="noopener noreferrer" 
-    className={`w-full px-6 py-2 rounded-lg font-semibold transition-colors mt-auto ${
-      isEBike 
-        ? 'text-white' 
-        : 'bg-slate-800 text-white hover:bg-slate-700'
-    }`}
-    style={isEBike ? { backgroundColor: '#ff6400' } : {}}
-  >
-    Get Pass
-  </a>
+
 </div>
                       );
                     })}
@@ -461,8 +465,8 @@ function App() {
                 ) : (
                   <div className="bg-white rounded-xl border border-slate-200/50 p-8 text-center flex flex-col items-center justify-center">
                     <AlertCircle className="w-10 h-10 text-slate-400 mb-2" />
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">No Day Deals Available</h3>
-                    <p className="text-slate-600">There are currently no day passes offered for {selectedCity}.</p>
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">No Passes Available</h3>
+                    <p className="text-slate-600">There are currently no passes offered for {selectedCity}.</p>
                   </div>
                 )}
               </div>
