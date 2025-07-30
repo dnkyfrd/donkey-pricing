@@ -4,6 +4,7 @@ import { groupedCities } from './data/cities';
 // import { fetchCityPricing } from './services/api';
 import { CityPricingData, MembershipPlan } from './types/api';
 import { LoadingSpinner } from './components/LoadingSpinner';
+import { debounce } from 'lodash';
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState('Denmark');
@@ -16,7 +17,6 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   // No geolocation: default selection only
 
-  // Iframe resize functionality
   useEffect(() => {
     const sendHeight = () => {
       const height = Math.max(
@@ -26,32 +26,28 @@ function App() {
         document.documentElement.scrollHeight,
         document.documentElement.offsetHeight
       );
-      
+  
       window.parent.postMessage({
         type: 'resize',
-        height: height + 20 // Adding small buffer for safety
+        height: height + 20
       }, '*');
     };
-
-    // Send initial height after a small delay to ensure content is rendered
-    setTimeout(sendHeight, 100);
-
-    // Listen for window resize
-    window.addEventListener('resize', sendHeight);
-
-    // Watch for content changes using ResizeObserver
-    const resizeObserver = new ResizeObserver(() => {
-      setTimeout(sendHeight, 50); // Small delay for layout to settle
-    });
-    
-    resizeObserver.observe(document.body);
-
-    // Cleanup function
+  
+    const debouncedSendHeight = debounce(sendHeight, 100);
+  
+    // Initial send after layout settles
+    setTimeout(sendHeight, 300);
+  
+    window.addEventListener('resize', debouncedSendHeight);
+  
+    const observer = new ResizeObserver(debouncedSendHeight);
+    observer.observe(document.body);
+  
     return () => {
-      window.removeEventListener('resize', sendHeight);
-      resizeObserver.disconnect();
+      window.removeEventListener('resize', debouncedSendHeight);
+      observer.disconnect();
     };
-  }, []); // Empty dependency array means this runs once on mount
+  }, []);
 
   const countries = Object.keys(groupedCities);
   const cities = React.useMemo(() => selectedCountry ? groupedCities[selectedCountry] || [] : [], [selectedCountry]);
