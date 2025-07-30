@@ -19,22 +19,14 @@ function App() {
   useEffect(() => {
     let lastHeight = 0;
     let timeoutId: ReturnType<typeof setTimeout> | null = null;
-  
-    const getHeight = () => document.documentElement.scrollHeight;
 
     const sendHeight = () => {
       requestAnimationFrame(() => {
         setTimeout(() => {
           const wrapper = document.getElementById('content-wrapper');
-          const height = wrapper?.offsetHeight || document.documentElement.scrollHeight;
-    
-          console.log('measured wrapper height:', height);
+          const height = wrapper?.offsetHeight || document.documentElement.scrollHeight;        
           if (height === lastHeight) return;
-          lastHeight = height;
-
-          console.log('current height:', height);
-          console.log('last height:', lastHeight);
-    
+          lastHeight = height;        
           window.parent.postMessage({ type: 'resize', height }, '*');
         }, 100);
       });
@@ -52,10 +44,8 @@ function App() {
     window.addEventListener('resize', debouncedSend);
   
     // ✅ Listen for messages from parent
-    const handleMessage = (event: MessageEvent) => {
-      console.log("message received: ", event.data)
-      if (event.data?.type === 'getHeight') {
-        console.log("sending height")
+    const handleMessage = (event: MessageEvent) => {      
+      if (event.data?.type === 'getHeight') {        
         sendHeight(); // respond with updated height
       }
     };
