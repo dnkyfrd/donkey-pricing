@@ -287,13 +287,13 @@ function App() {
   })()}
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-slate-900">{pricing.vehicle_type}</h3>
+                        <h3 className="text-lg font-bold text-slate-900">{pricing.vehicle_type == 'bike' ? 'Classic bike' : 'Electric Bike'}</h3>
                       </div>
                     </div>
                     {/* Pricing Tiers */}
                     {/* Interval-based (Copenhagen-style) pricing support */}
                     {isIntervalPricing(pricing.duration) ? (
-                      <div className="bg-slate-50 rounded-lg p-4 text-center border-2 border-blue-200">
+                      <div className="rounded-lg p-4 text-center">
                         {Number(pricing.duration.starting_fee_in_major_units) !== Number(pricing.duration.cost_per_interval_in_major_units) && (
                           <div className="text-base font-bold text-slate-900 mb-1">
                             {`${formatPrice(Number(pricing.duration.starting_fee_in_major_units), pricing.currency)} for first ${Number(pricing.duration.starting_fee_duration_minutes)} minutes`}
@@ -451,7 +451,7 @@ function App() {
     <div className={`w-12 h-12 mb-3 bg-gradient-to-br ${isEBike ? 'from-orange-100 to-orange-200' : 'from-blue-100 to-blue-200'} rounded-xl flex items-center justify-center`}>
       <Icon className={`w-6 h-6 ${isEBike ? 'text-orange-600' : 'text-blue-600'}`} />
     </div>
-    <h3 className="text-base font-bold text-slate-900 mb-2 text-center">{dayDeal.title}</h3>
+    <h3 className="text-base font-bold text-slate-900 mb-2 text-center">{dayDeal.vehicle_type === 'bike' ? 'Classic bike' : 'Electric Bike'}</h3>
 
     {/* Row 2: Price */}
     <div className="text-xl font-bold text-slate-900 mb-1 text-center">{formatPrice(dayDeal.price, dayDeal.currency)}</div>
