@@ -17,47 +17,42 @@ function App() {
   // No geolocation: default selection only
 
   useEffect(() => {
-    const sendHeight = () => {
-      const height = Math.max(
-        document.body.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.clientHeight,
-        document.documentElement.scrollHeight,
-        document.documentElement.offsetHeight
-      );
-  
-      window.parent.postMessage(
-        {
-          type: 'resize',
-          height: height,
-        },
-        '*'
-      );
-    };
-  
-    // ✅ Debounce implementation
+    let lastHeight = 0;
     let timeoutId: ReturnType<typeof setTimeout> | null = null;
-    const debouncedSendHeight = () => {
-      if (timeoutId) clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        sendHeight();
-      }, 100); // adjust delay here
+  
+    const getHeight = () => document.documentElement.scrollHeight;
+  
+    const sendHeight = () => {
+      const height = getHeight();
+      if (height === lastHeight) return;
+      lastHeight = height;
+      window.parent.postMessage({ type: 'resize', height }, '*');
     };
   
-    // Initial trigger after page load
-    setTimeout(sendHeight, 300);
+    const debouncedSend = () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      timeoutId = setTimeout(sendHeight, 100);
+    };
   
-    // Resize observer on body
-    const resizeObserver = new ResizeObserver(debouncedSendHeight);
+    setTimeout(sendHeight, 300); // initial render
+  
+    const resizeObserver = new ResizeObserver(debouncedSend);
     resizeObserver.observe(document.body);
+    window.addEventListener('resize', debouncedSend);
   
-    // Also handle browser resize
-    window.addEventListener('resize', debouncedSendHeight);
+    // ✅ Listen for messages from parent
+    const handleMessage = (event: MessageEvent) => {
+      if (event.data?.type === 'getHeight') {
+        sendHeight(); // respond with updated height
+      }
+    };
+    window.addEventListener('message', handleMessage);
   
     return () => {
       if (timeoutId) clearTimeout(timeoutId);
       resizeObserver.disconnect();
-      window.removeEventListener('resize', debouncedSendHeight);
+      window.removeEventListener('resize', debouncedSend);
+      window.removeEventListener('message', handleMessage);
     };
   }, []);
 
