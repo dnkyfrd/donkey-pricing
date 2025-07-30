@@ -24,6 +24,8 @@ function App() {
   
     const sendHeight = () => {
       const height = getHeight();
+      console.log("current height: ", height)
+      console.log("last height: ", lastHeight)
       if (height === lastHeight) return;
       lastHeight = height;
       window.parent.postMessage({ type: 'resize', height }, '*');
@@ -42,7 +44,9 @@ function App() {
   
     // ✅ Listen for messages from parent
     const handleMessage = (event: MessageEvent) => {
+      console.log("message received: ", event.data)
       if (event.data?.type === 'getHeight') {
+        console.log("sending height")
         sendHeight(); // respond with updated height
       }
     };
