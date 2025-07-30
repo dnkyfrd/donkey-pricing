@@ -429,7 +429,7 @@ function App() {
                         style={{ backgroundColor: '#ff6400' }}
                         onClick={() => window.open('https://dnky.bike/7jIsFIUKoHb', '_blank', 'noopener,noreferrer')}
                       >
-                        Get Pass
+                        Get started
                       </button>
                     ) : ''}
                   </div>
