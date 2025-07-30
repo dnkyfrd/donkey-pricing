@@ -4,7 +4,6 @@ import { groupedCities } from './data/cities';
 // import { fetchCityPricing } from './services/api';
 import { CityPricingData, MembershipPlan } from './types/api';
 import { LoadingSpinner } from './components/LoadingSpinner';
-import { debounce } from 'lodash';
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState('Denmark');
@@ -27,25 +26,38 @@ function App() {
         document.documentElement.offsetHeight
       );
   
-      window.parent.postMessage({
-        type: 'resize',
-        height: height + 20
-      }, '*');
+      window.parent.postMessage(
+        {
+          type: 'resize',
+          height: height + 20, // add some buffer
+        },
+        '*'
+      );
     };
   
-    const debouncedSendHeight = debounce(sendHeight, 100);
+    // ✅ Debounce implementation
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+    const debouncedSendHeight = () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        sendHeight();
+      }, 100); // adjust delay here
+    };
   
-    // Initial send after layout settles
+    // Initial trigger after page load
     setTimeout(sendHeight, 300);
   
+    // Resize observer on body
+    const resizeObserver = new ResizeObserver(debouncedSendHeight);
+    resizeObserver.observe(document.body);
+  
+    // Also handle browser resize
     window.addEventListener('resize', debouncedSendHeight);
   
-    const observer = new ResizeObserver(debouncedSendHeight);
-    observer.observe(document.body);
-  
     return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      resizeObserver.disconnect();
       window.removeEventListener('resize', debouncedSendHeight);
-      observer.disconnect();
     };
   }, []);
 
