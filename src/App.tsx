@@ -23,12 +23,18 @@ function App() {
     const getHeight = () => document.documentElement.scrollHeight;
   
     const sendHeight = () => {
-      const height = getHeight();
-      console.log("current height: ", height)
-      console.log("last height: ", lastHeight)
-      if (height === lastHeight) return;
-      lastHeight = height;
-      window.parent.postMessage({ type: 'resize', height }, '*');
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const height = document.documentElement.scrollHeight;
+          console.log('body.scrollHeight:', document.body.scrollHeight);
+console.log('html.scrollHeight:', document.documentElement.scrollHeight);
+          console.log('current height:', height);
+          console.log('last height:', lastHeight);
+          if (height === lastHeight) return;
+          lastHeight = height;
+          window.parent.postMessage({ type: 'resize', height }, '*');
+        }, 50); // give layout a bit of time to settle
+      });
     };
   
     const debouncedSend = () => {
