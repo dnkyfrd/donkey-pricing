@@ -29,7 +29,7 @@ function App() {
       window.parent.postMessage(
         {
           type: 'resize',
-          height: height + 20, // add some buffer
+          height: height,
         },
         '*'
       );
