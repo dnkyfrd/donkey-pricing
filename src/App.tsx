@@ -25,13 +25,6 @@ function App() {
     ecargo: 'E-Cargo Bike',
   };
 
-  const order: Record<string, number> = {
-    'Pedal bike': 0,
-    'E-bike': 1,
-    'Cargo bike': 2,
-    'E-Cargo bike': 3,
-  };
-
   useEffect(() => {
     let lastHeight = 0;
     let timeoutId: ReturnType<typeof setTimeout> | null = null;
@@ -288,7 +281,24 @@ function App() {
               <div className={`grid gap-6 ${pricingData.justRide.length > 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {[...pricingData.justRide]
                 .sort((a, b) => {
-                  return (order[a.vehicle_type] ?? 99) - (order[b.vehicle_type] ?? 99);
+                  // Map of vehicle types to their sort order
+                  console.log(a, b);
+                  const typeOrder: Record<string, number> = {
+                    'bike': 0,
+                    'ebike': 1,
+                    'cargo': 2,
+                    'ecargo': 3,
+                    // Add any other possible variations here
+                    'Pedal Bike': 0,
+                    'pedal bike': 0,
+                    'e-bike': 1,
+                    'E-Bike': 1,
+                  };
+                  
+                  const orderA = typeOrder[a.vehicle_type] ?? 99;
+                  const orderB = typeOrder[b.vehicle_type] ?? 99;
+                  
+                  return orderA - orderB;
                 })
                   .map((pricing) => (
                   <div key={pricing.id} className="bg-white rounded-2xl shadow-lg border border-slate-200/50 p-6 flex flex-col">
