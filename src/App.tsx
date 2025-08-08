@@ -16,6 +16,22 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   // No geolocation: default selection only
 
+  type VehicleType = 'bike' | 'ebike' | 'cargo' | 'ecargo';
+
+  const vehicleLabels: Record<VehicleType, string> = {
+    bike: 'Classic Bike',
+    ebike: 'Electric Bike',
+    cargo: 'Cargo Bike',
+    ecargo: 'E-Cargo Bike',
+  };
+
+  const order: Record<string, number> = {
+    'Pedal bike': 0,
+    'E-bike': 1,
+    'Cargo bike': 2,
+    'E-Cargo bike': 3,
+  };
+
   useEffect(() => {
     let lastHeight = 0;
     let timeoutId: ReturnType<typeof setTimeout> | null = null;
@@ -269,14 +285,11 @@ function App() {
               </div>
 
               {/* Side-by-side bike/ebike */}
-              <div className={`grid gap-6 ${pricingData.justRide.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+              <div className={`grid gap-6 ${pricingData.justRide.length > 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                 {[...pricingData.justRide]
-                  .sort((a, b) => {
-                    // Pedal bike (bike) first, then E-bike
-                    if ((a.vehicle_type === 'Pedal bike' && b.vehicle_type === 'E-bike')) return -1;
-                    if ((a.vehicle_type === 'E-bike' && b.vehicle_type === 'Pedal bike')) return 1;
-                    return 0;
-                  })
+                .sort((a, b) => {
+                  return (order[a.vehicle_type] ?? 99) - (order[b.vehicle_type] ?? 99);
+                })
                   .map((pricing) => (
                   <div key={pricing.id} className="bg-white rounded-2xl shadow-lg border border-slate-200/50 p-6 flex flex-col">
                     <div className="flex items-center justify-center mb-4">
@@ -287,7 +300,7 @@ function App() {
   })()}
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-slate-900">{pricing.vehicle_type == 'bike' ? 'Classic Bike' : 'Electric Bike'}</h3>
+                        <h3 className="text-lg font-bold text-slate-900"> {vehicleLabels[pricing.vehicle_type as VehicleType] || 'Unknown Bike'}</h3>
                       </div>
                     </div>
                     {/* Pricing Tiers */}
