@@ -117,7 +117,7 @@ function App() {
 
 
   // Always round up to nearest integer for Just Ride pricing
-  const formatPrice = (price: number, currency: string = 'EUR') => `${Math.ceil(Number(price))} ${currency}`;
+  const formatPrice = (price: number, currency: string = 'EUR') => `${Number(price)} ${currency}`;
 
   function getFreeTimeLabel(value: string | undefined): string {
     if (!value || typeof value !== 'string') return '';
