@@ -1496,11 +1496,11 @@
         "theft_insurance_factor": "0.15",
         "theft_insurance_hour_price": "4.0",
         "duration": {
-          "interval_length_minutes": "10.0",
+          "interval_length_minutes": "1.0",
           "normalization_period_mins": "1440.0",
           "starting_fee_in_major_units": "20.0",
           "starting_fee_duration_minutes": "10.0",
-          "cost_per_interval_in_major_units": "20.0",
+          "cost_per_interval_in_major_units": "2.0",
           "max_price_per_normalization_period_in_major_units": "425.0"
         }
       }
@@ -1552,7 +1552,7 @@
         "currency": "DKK",
         "account_id": 19,
         "tag": "Special offer",
-        "name": "Pass offer",
+        "name": null,
         "auto_renewable": false,
         "bike_type": "bike",
         "duration_hours": 72,
@@ -1821,7 +1821,7 @@
         "currency": "EUR",
         "account_id": 889,
         "tag": "Special offer",
-        "name": "Pass offer",
+        "name": null,
         "auto_renewable": false,
         "bike_type": "bike",
         "duration_hours": 72,
@@ -6505,11 +6505,11 @@
         "theft_insurance_factor": "0.15",
         "theft_insurance_hour_price": "4.0",
         "duration": {
-          "interval_length_minutes": "10.0",
+          "interval_length_minutes": "1.0",
           "normalization_period_mins": "1440.0",
           "starting_fee_in_major_units": "20.0",
           "starting_fee_duration_minutes": "10.0",
-          "cost_per_interval_in_major_units": "20.0",
+          "cost_per_interval_in_major_units": "2.0",
           "max_price_per_normalization_period_in_major_units": "425.0"
         }
       }
@@ -6561,7 +6561,7 @@
         "currency": "DKK",
         "account_id": 19,
         "tag": "Special offer",
-        "name": "Pass offer",
+        "name": null,
         "auto_renewable": false,
         "bike_type": "bike",
         "duration_hours": 72,
