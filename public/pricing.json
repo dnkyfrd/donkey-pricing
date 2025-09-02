@@ -77,8 +77,15 @@
         "theft_insurance_hour_price": "0.4",
         "duration": [
           {
+            "duration_minutes": 15,
+            "price": "1.7",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 30,
-            "price": "0.0",
+            "price": "2.2",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -258,8 +265,15 @@
         "theft_insurance_hour_price": "0.4",
         "duration": [
           {
+            "duration_minutes": 15,
+            "price": "1.7",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 30,
-            "price": "0.0",
+            "price": "2.2",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -439,8 +453,15 @@
         "theft_insurance_hour_price": "0.4",
         "duration": [
           {
+            "duration_minutes": 15,
+            "price": "1.7",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 30,
-            "price": "0.0",
+            "price": "2.2",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -6381,9 +6402,9 @@
         "duration": {
           "interval_length_minutes": "15.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "1.5",
+          "starting_fee_in_major_units": "2.0",
           "starting_fee_duration_minutes": "15.0",
-          "cost_per_interval_in_major_units": "1.5",
+          "cost_per_interval_in_major_units": "2.0",
           "max_price_per_normalization_period_in_major_units": "25.0"
         }
       }
