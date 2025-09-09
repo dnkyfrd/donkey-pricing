@@ -3088,30 +3088,21 @@
   "Le Locle": {
     "memberships": [
       {
-        "id": 2176,
-        "name": "Pay as you go",
-        "price": 8,
-        "currency": "EUR",
+        "id": 277,
+        "name": "Abonnement vélo mensuel",
+        "price": 5,
+        "currency": "CHF",
         "period": "month",
-        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "short_description": "",
         "popular": false
       },
       {
-        "id": 2177,
-        "name": "Daily Rider",
-        "price": 15,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
-        "popular": false
-      },
-      {
-        "id": 2178,
-        "name": "Commuter",
-        "price": 25,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "id": 276,
+        "name": "Abonnement Le Locle",
+        "price": 30,
+        "currency": "CHF",
+        "period": "year",
+        "short_description": "",
         "popular": false
       }
     ],
