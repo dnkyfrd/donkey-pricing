@@ -135,7 +135,7 @@ export const cityData: ApiCity[] = [
         "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=60.4518126,22.2666303&filter_type=radius&radius=5000"
     },
     {
-        "city_name": "Genf",
+        "city_name": "Geneva",
         "city_app_id": 217,
         "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=46.2043907,6.1431577&country_code=CH",
         "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=46.2043907,6.1431577",
