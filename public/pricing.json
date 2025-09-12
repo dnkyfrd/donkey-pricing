@@ -5293,7 +5293,7 @@
           },
           {
             "duration_minutes": 600,
-            "price": "10.0",
+            "price": "12.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
