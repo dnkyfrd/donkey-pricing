@@ -482,7 +482,7 @@ function App() {
     {/* Row 3: Duration */}
     <div className="text-sm text-slate-600 mb-2 mt-3 text-center">
     {dayDeal.free_time?.[isEBike ? 'ebike' : 'bike']
-      ? `${getFreeTimeLabel(dayDeal.free_time[isEBike ? 'ebike' : 'bike'])} of riding time`
+      ? `${getFreeTimeLabel(dayDeal.free_time[isEBike ? 'ebike' : 'bike'])} of included time`
       : ''}
   </div>
     <div className="text-sm text-slate-600 mb-4 text-center">Valid for {getDurationLabel((dayDeal.duration_hours ?? 0) * 60)}</div>
