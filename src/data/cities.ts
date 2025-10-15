@@ -50,6 +50,13 @@ export const cityData: ApiCity[] = [
         "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=56.030787,12.592127",
         "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=56.030787,12.592127&filter_type=radius&radius=5000"
     },
+        {
+        "city_name": "Aarhus",
+        "city_app_id": 205,
+        "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=56.162939,10.203921&country_code=DK",
+        "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=56.162939,10.203921",
+        "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=56.162939,10.203921&filter_type=radius&radius=5000"
+    },
     {
         "city_name": "Hanover",
         "city_app_id": 592,
