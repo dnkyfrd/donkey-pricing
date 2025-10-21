@@ -37,7 +37,7 @@
     "memberships": [
       {
         "id": 3416,
-        "name": "Daily Fiets",
+        "name": "Daily Rider",
         "price": 10,
         "currency": "EUR",
         "period": "month",
@@ -91,7 +91,7 @@
     "memberships": [
       {
         "id": 3416,
-        "name": "Daily Fiets",
+        "name": "Daily Rider",
         "price": 10,
         "currency": "EUR",
         "period": "month",
@@ -145,7 +145,7 @@
     "memberships": [
       {
         "id": 3416,
-        "name": "Daily Fiets",
+        "name": "Daily Rider",
         "price": 10,
         "currency": "EUR",
         "period": "month",
@@ -5664,7 +5664,7 @@
     "memberships": [
       {
         "id": 3416,
-        "name": "Daily Fiets",
+        "name": "Daily Rider",
         "price": 10,
         "currency": "EUR",
         "period": "month",
@@ -5923,7 +5923,7 @@
     "memberships": [
       {
         "id": 3416,
-        "name": "Daily Fiets",
+        "name": "Daily Rider",
         "price": 10,
         "currency": "EUR",
         "period": "month",
