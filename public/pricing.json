@@ -60,22 +60,22 @@
         "duration": {
           "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "2.0",
+          "starting_fee_in_major_units": "1.6",
           "starting_fee_duration_minutes": "20.0",
-          "cost_per_interval_in_major_units": "2.0",
-          "max_price_per_normalization_period_in_major_units": "35.0"
+          "cost_per_interval_in_major_units": "1.6",
+          "max_price_per_normalization_period_in_major_units": "25.0"
         }
       }
     ],
     "dayDeals": [
       {
-        "id": 175,
+        "id": 180,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "20.0",
+        "price": "15.0",
         "currency": "EUR",
         "account_id": 896,
         "tag": null,
@@ -114,22 +114,22 @@
         "duration": {
           "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "2.0",
+          "starting_fee_in_major_units": "1.6",
           "starting_fee_duration_minutes": "20.0",
-          "cost_per_interval_in_major_units": "2.0",
-          "max_price_per_normalization_period_in_major_units": "35.0"
+          "cost_per_interval_in_major_units": "1.6",
+          "max_price_per_normalization_period_in_major_units": "25.0"
         }
       }
     ],
     "dayDeals": [
       {
-        "id": 175,
+        "id": 180,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "20.0",
+        "price": "15.0",
         "currency": "EUR",
         "account_id": 896,
         "tag": null,
@@ -168,22 +168,22 @@
         "duration": {
           "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "2.0",
+          "starting_fee_in_major_units": "1.6",
           "starting_fee_duration_minutes": "20.0",
-          "cost_per_interval_in_major_units": "2.0",
-          "max_price_per_normalization_period_in_major_units": "35.0"
+          "cost_per_interval_in_major_units": "1.6",
+          "max_price_per_normalization_period_in_major_units": "25.0"
         }
       }
     ],
     "dayDeals": [
       {
-        "id": 175,
+        "id": 180,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "20.0",
+        "price": "15.0",
         "currency": "EUR",
         "account_id": 896,
         "tag": null,
@@ -2491,22 +2491,22 @@
         "duration": {
           "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "2.0",
+          "starting_fee_in_major_units": "1.6",
           "starting_fee_duration_minutes": "20.0",
-          "cost_per_interval_in_major_units": "2.0",
-          "max_price_per_normalization_period_in_major_units": "35.0"
+          "cost_per_interval_in_major_units": "1.6",
+          "max_price_per_normalization_period_in_major_units": "25.0"
         }
       }
     ],
     "dayDeals": [
       {
-        "id": 176,
+        "id": 181,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "20.0",
+        "price": "15.0",
         "currency": "EUR",
         "account_id": 865,
         "tag": null,
@@ -4275,12 +4275,12 @@
         "theft_insurance_factor": "0.15",
         "theft_insurance_hour_price": "0.4",
         "duration": {
-          "interval_length_minutes": "15.0",
+          "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
           "starting_fee_in_major_units": "2.0",
-          "starting_fee_duration_minutes": "15.0",
+          "starting_fee_duration_minutes": "20.0",
           "cost_per_interval_in_major_units": "2.0",
-          "max_price_per_normalization_period_in_major_units": "35.0"
+          "max_price_per_normalization_period_in_major_units": "25.0"
         }
       },
       {
@@ -4295,24 +4295,24 @@
         "theft_insurance_factor": "0.15",
         "theft_insurance_hour_price": "0.4",
         "duration": {
-          "interval_length_minutes": "15.0",
+          "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "4.0",
-          "starting_fee_duration_minutes": "15.0",
-          "cost_per_interval_in_major_units": "4.0",
-          "max_price_per_normalization_period_in_major_units": "60.0"
+          "starting_fee_in_major_units": "3.5",
+          "starting_fee_duration_minutes": "20.0",
+          "cost_per_interval_in_major_units": "3.5",
+          "max_price_per_normalization_period_in_major_units": "45.0"
         }
       }
     ],
     "dayDeals": [
       {
-        "id": 173,
+        "id": 182,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "25.0",
+        "price": "15.0",
         "currency": "EUR",
         "account_id": 381,
         "tag": null,
@@ -4323,14 +4323,14 @@
         "title": "Pedal bike"
       },
       {
-        "id": 172,
+        "id": 183,
         "vehicle_type": "ebike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S",
           "ebike": "PT86400S"
         },
-        "price": "40.0",
+        "price": "30.0",
         "currency": "EUR",
         "account_id": 381,
         "tag": null,
@@ -5687,22 +5687,22 @@
         "duration": {
           "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "2.0",
+          "starting_fee_in_major_units": "1.6",
           "starting_fee_duration_minutes": "20.0",
-          "cost_per_interval_in_major_units": "2.0",
-          "max_price_per_normalization_period_in_major_units": "35.0"
+          "cost_per_interval_in_major_units": "1.6",
+          "max_price_per_normalization_period_in_major_units": "25.0"
         }
       }
     ],
     "dayDeals": [
       {
-        "id": 174,
+        "id": 179,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "20.0",
+        "price": "15.0",
         "currency": "EUR",
         "account_id": 634,
         "tag": null,
@@ -6018,25 +6018,8 @@
         "additional_day": 9
       }
     ],
-    "dayDeals": [
-      {
-        "id": 174,
-        "vehicle_type": "bike",
-        "duration": "PT1440M",
-        "free_time": {
-          "bike": "PT86400S"
-        },
-        "price": "20.0",
-        "currency": "EUR",
-        "account_id": 634,
-        "tag": null,
-        "name": null,
-        "auto_renewable": false,
-        "bike_type": "bike",
-        "duration_hours": 24,
-        "title": "Pedal bike"
-      }
-    ]
+    "dayDeals": [],
+    "warning": "No dayDeals."
   },
   "Barcelona": {
     "memberships": [
