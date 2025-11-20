@@ -1064,15 +1064,6 @@
         "popular": false
       },
       {
-        "id": 3419,
-        "name": "E-Bike Pay as you go",
-        "price": 75,
-        "currency": "DKK",
-        "period": "month",
-        "short_description": "Ride more, pay less — save up to 50% compared to Just Ride pricing",
-        "popular": false
-      },
-      {
         "id": 2927,
         "name": "Daily Rider",
         "price": 115,
@@ -1088,15 +1079,6 @@
         "currency": "DKK",
         "period": "month",
         "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
-        "popular": false
-      },
-      {
-        "id": 3420,
-        "name": "E-Bike Daily Rider",
-        "price": 299,
-        "currency": "DKK",
-        "period": "month",
-        "short_description": "For those who need a bike regularly, enjoy 10 e-bikes rides of 20 minutes each per month, plus 2 hours of daily free time on classic bikes.",
         "popular": false
       }
     ],
@@ -5622,15 +5604,6 @@
         "popular": false
       },
       {
-        "id": 3419,
-        "name": "E-Bike Pay as you go",
-        "price": 75,
-        "currency": "DKK",
-        "period": "month",
-        "short_description": "Ride more, pay less — save up to 50% compared to Just Ride pricing",
-        "popular": false
-      },
-      {
         "id": 2927,
         "name": "Daily Rider",
         "price": 115,
@@ -5646,15 +5619,6 @@
         "currency": "DKK",
         "period": "month",
         "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
-        "popular": false
-      },
-      {
-        "id": 3420,
-        "name": "E-Bike Daily Rider",
-        "price": 299,
-        "currency": "DKK",
-        "period": "month",
-        "short_description": "For those who need a bike regularly, enjoy 10 e-bikes rides of 20 minutes each per month, plus 2 hours of daily free time on classic bikes.",
         "popular": false
       }
     ],
@@ -6113,8 +6077,25 @@
         "additional_day": 9
       }
     ],
-    "dayDeals": [],
-    "warning": "No dayDeals."
+    "dayDeals": [
+      {
+        "id": 179,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "15.0",
+        "currency": "EUR",
+        "account_id": 634,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      }
+    ]
   },
   "Barcelona": {
     "memberships": [
@@ -6234,15 +6215,6 @@
         "popular": false
       },
       {
-        "id": 3419,
-        "name": "E-Bike Pay as you go",
-        "price": 75,
-        "currency": "DKK",
-        "period": "month",
-        "short_description": "Ride more, pay less — save up to 50% compared to Just Ride pricing",
-        "popular": false
-      },
-      {
         "id": 2927,
         "name": "Daily Rider",
         "price": 115,
@@ -6258,15 +6230,6 @@
         "currency": "DKK",
         "period": "month",
         "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
-        "popular": false
-      },
-      {
-        "id": 3420,
-        "name": "E-Bike Daily Rider",
-        "price": 299,
-        "currency": "DKK",
-        "period": "month",
-        "short_description": "For those who need a bike regularly, enjoy 10 e-bikes rides of 20 minutes each per month, plus 2 hours of daily free time on classic bikes.",
         "popular": false
       }
     ],
