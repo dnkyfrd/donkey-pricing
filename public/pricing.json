@@ -2034,21 +2034,12 @@
   "Prignitz": {
     "memberships": [
       {
-        "id": 2370,
-        "name": "Onkel Dagobert Tarif ",
+        "id": 2666,
+        "name": "Pay as you go",
         "price": 5,
         "currency": "EUR",
         "period": "month",
-        "short_description": "15 Freiminuten/ Tag, danach fahren zum halben Preis",
-        "popular": false
-      },
-      {
-        "id": 2369,
-        "name": "Speedy Gonzales Tarif ",
-        "price": 9,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "120 Freiminuten/ Tag danach fallen Just-ride-Preise an",
+        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
         "popular": false
       }
     ],
@@ -2431,30 +2422,12 @@
         "popular": false
       },
       {
-        "id": 2026,
-        "name": "Daily Rider ",
-        "price": 10,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "",
-        "popular": false
-      },
-      {
         "id": 2702,
         "name": "Commuter",
         "price": 19,
         "currency": "EUR",
         "period": "month",
         "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
-        "popular": false
-      },
-      {
-        "id": 2027,
-        "name": "Drechtsteden 12U",
-        "price": 19,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "",
         "popular": false
       }
     ],
@@ -4994,15 +4967,6 @@
   },
   "Straubing": {
     "memberships": [
-      {
-        "id": 2706,
-        "name": "Jährliche Mitgliedschaft Straubing- 30 min pro Tag gratis radeln",
-        "price": 14.9,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "30 min gratis radel pro Tag",
-        "popular": false
-      },
       {
         "id": 3108,
         "name": "Pendel-Donkeys- radel 50x 30 Minuten kostenlos auf allen E-Bikes und täglich 30 Minuten auf allen P-Bikes. ",
