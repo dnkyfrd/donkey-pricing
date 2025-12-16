@@ -11,6 +11,15 @@
         "popular": false
       },
       {
+        "id": 3500,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
         "id": 2177,
         "name": "Daily Rider",
         "price": 15,
@@ -1669,6 +1678,15 @@
         "popular": false
       },
       {
+        "id": 3500,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
         "id": 2177,
         "name": "Daily Rider",
         "price": 15,
@@ -2482,6 +2500,15 @@
         "currency": "EUR",
         "period": "month",
         "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 3500,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
         "popular": false
       },
       {
@@ -4468,6 +4495,15 @@
         "popular": false
       },
       {
+        "id": 3500,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
         "id": 2177,
         "name": "Daily Rider",
         "price": 15,
@@ -4854,6 +4890,15 @@
         "currency": "EUR",
         "period": "month",
         "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 3500,
+        "name": "Daily Rider",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
         "popular": false
       },
       {
