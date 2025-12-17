@@ -2431,6 +2431,15 @@
   "Dordecht": {
     "memberships": [
       {
+        "id": 3501,
+        "name": "Daily Rider ",
+        "price": 0,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
         "id": 2701,
         "name": "Pay as you go",
         "price": 5,
