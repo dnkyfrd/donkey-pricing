@@ -2431,21 +2431,21 @@
   "Dordecht": {
     "memberships": [
       {
-        "id": 3501,
-        "name": "Daily Rider ",
-        "price": 0,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "",
-        "popular": false
-      },
-      {
         "id": 2701,
         "name": "Pay as you go",
         "price": 5,
         "currency": "EUR",
         "period": "month",
         "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false
+      },
+      {
+        "id": 3501,
+        "name": "Daily Rider ",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
         "popular": false
       },
       {
