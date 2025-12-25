@@ -4958,12 +4958,12 @@
   "Straubing": {
     "memberships": [
       {
-        "id": 3108,
-        "name": "Pendel-Donkeys- radel 50x 30 Minuten kostenlos auf allen E-Bikes und täglich 30 Minuten auf allen P-Bikes. ",
-        "price": 49.9,
+        "id": 2666,
+        "name": "Pay as you go",
+        "price": 5,
         "currency": "EUR",
         "period": "month",
-        "short_description": "",
+        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
         "popular": false
       }
     ],
