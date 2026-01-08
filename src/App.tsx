@@ -6,8 +6,8 @@ import { CityPricingData, MembershipPlan } from './types/api';
 import { LoadingSpinner } from './components/LoadingSpinner';
 
 function App() {
-  const [selectedCountry, setSelectedCountry] = useState('Denmark');
-  const [selectedCity, setSelectedCity] = useState('Copenhagen');
+  const [selectedCountry, setSelectedCountry] = useState('Select your country');
+  const [selectedCity, setSelectedCity] = useState('...');
   const [countryDropdownOpen, setCountryDropdownOpen] = useState(false);
   const [cityDropdownOpen, setCityDropdownOpen] = useState(false);
   const [pricingData, setPricingData] = useState<CityPricingData | null>(null);
@@ -38,6 +38,21 @@ useEffect(() => {
   };
 
   loadGeo();
+}, []);
+
+useEffect(() => {
+  const handleClick = (e: MouseEvent) => {
+    if (
+      !(e.target as HTMLElement).closest("#country-dropdown") &&
+      !(e.target as HTMLElement).closest("#city-dropdown")
+    ) {
+      setCountryDropdownOpen(false);
+      setCityDropdownOpen(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClick);
+  return () => document.removeEventListener("mousedown", handleClick);
 }, []);
 
   function normalizeCountry(name: string) {
@@ -116,7 +131,25 @@ function findMatchingCountry(
 
   useEffect(() => {
     if (selectedCountry && cities.length > 0 && !cities.find(city => city.city_name === selectedCity)) {
-      setSelectedCity(cities[0].city_name);
+      switch(selectedCountry) {
+        case 'Denmark':
+          setSelectedCity('Copenhagen');
+          break;
+        case 'Netherlands':
+          setSelectedCity('Amsterdam');
+          break;
+        case 'Switzerland':
+          setSelectedCity('Geneva');
+          break;
+        case 'Belgium':
+          setSelectedCity('Antwerp');
+          break;
+        case 'Germany':
+          setSelectedCity('Hanover');
+          break;
+        default:
+          setSelectedCity(cities[0].city_name);
+      }
     }
   }, [selectedCountry, cities, selectedCity]);
 
@@ -153,7 +186,7 @@ function findMatchingCountry(
         setError(null);
       } else {
         setPricingData(null);
-        setError('No pricing data found for this city.');
+        setError('Select a Donkey country and city above to view pricing');
       }
     }
   }, [allPricing, selectedCity]);
@@ -216,7 +249,7 @@ function findMatchingCountry(
         {/* Location Selector */}
         <section className="pb-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-2xl shadow-lg border border-slate-200/50 p-6">
+            <div className="bg-white rounded-2xl shadow-lg border border-2 border-orange-500/60 p-6">
               <div className="flex items-center justify-center space-x-1 mb-6">
                 <MapPin className="w-5 h-5 text-orange-500" />
                 <h2 className="text-lg font-semibold text-slate-900">Select Your Location</h2>
@@ -224,7 +257,7 @@ function findMatchingCountry(
               
               <div className="grid md:grid-cols-2 gap-4">
                 {/* Country Selector */}
-                <div className="relative">
+                <div id="country-dropdown" className="relative">
                   <button
                     onClick={() => setCountryDropdownOpen(!countryDropdownOpen)}
                     className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-left flex items-center justify-between hover:bg-slate-100 transition-colors"
@@ -251,7 +284,7 @@ function findMatchingCountry(
                 </div>
 
                 {/* City Selector */}
-                <div className="relative">
+                <div id="city-dropdown" className="relative">
                   <button
                     onClick={() => setCityDropdownOpen(!cityDropdownOpen)}
                     className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-left flex items-center justify-between hover:bg-slate-100 transition-colors"
@@ -297,15 +330,9 @@ function findMatchingCountry(
         {error && (
           <section className="pb-8">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="bg-white rounded-2xl shadow-lg border border-red-200/50 p-12 text-center">
-                <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
-                <p className="text-red-600 mb-4">{error}</p>
-                <button
-                  className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors cursor-not-allowed opacity-60"
-                  disabled
-                >
-                  Try Again
-                </button>
+              <div className="bg-white rounded-2xl shadow-lg border border-200/50 p-12 text-center">
+                <MapPin className="w-12 h-12 text-500 mx-auto mb-4" />
+                <p className="text-600 mb-4">{error}</p>           
               </div>
             </div>
           </section>
