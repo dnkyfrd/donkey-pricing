@@ -245,7 +245,7 @@ function findMatchingCountry(
 
   return (
     <div id="content-wrapper" className="w-full">
-      <div className="bg-gradient-to-br from-slate-50 to-blue-50/30 py-8">
+      <div className="py-8">
         {/* Location Selector */}
         <section className="pb-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
