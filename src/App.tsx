@@ -13,8 +13,51 @@ function App() {
   const [pricingData, setPricingData] = useState<CityPricingData | null>(null);
   const [allPricing, setAllPricing] = useState<Record<string, any> | null>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  // No geolocation: default selection only
+  const [error, setError] = useState<string | null>(null);  
+
+useEffect(() => {
+  const loadGeo = async () => {
+    try {
+      const res = await fetch("/geo");
+      const { countryName } = await res.json();
+
+      if (!countryName) return;
+
+      const matchedCountry = findMatchingCountry(
+        countryName,
+        groupedCities
+      );
+
+      if (matchedCountry) {
+        console.log(matchedCountry)
+        setSelectedCountry(matchedCountry);
+      }
+    } catch (err) {
+      console.warn("Geo lookup failed", err);
+    }
+  };
+
+  loadGeo();
+}, []);
+
+  function normalizeCountry(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/^the\s+/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function findMatchingCountry(
+  geoCountry: string,
+  countries: Record<string, unknown>
+) {
+  const normalizedGeo = normalizeCountry(geoCountry);
+
+  return Object.keys(countries).find(
+    (country) => normalizeCountry(country) === normalizedGeo
+  );
+}
 
   type VehicleType = 'bike' | 'ebike' | 'cargo' | 'ecargo';
 
