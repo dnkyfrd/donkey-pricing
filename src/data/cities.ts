@@ -149,6 +149,13 @@ export const cityData: ApiCity[] = [
         "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=46.2043907,6.1431577&filter_type=radius&radius=5000"
     },
     {
+        "city_name": "Yverdon-les-Bains",
+        "city_app_id": 519,
+        "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=46.7785,6.6412&country_code=CH",
+        "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=46.7785,6.6412",
+        "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=46.7785,6.6412&filter_type=radius&radius=5000"
+    },
+    {
         "city_name": "Amsterdam",
         "city_app_id": 5,
         "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=52.3702157,4.8951679&country_code=NL",
