@@ -4168,6 +4168,103 @@
       }
     ]
   },
+  "Yverdon-les-Bains": {
+    "memberships": [
+      {
+        "id": 517,
+        "name": "Abonnement vélo mensuel 1h - Yverdon-les-Bains",
+        "price": 6,
+        "currency": "CHF",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 516,
+        "name": "Abonnement vélo annuel - 1h - Yverdon-les-Bains",
+        "price": 45,
+        "currency": "CHF",
+        "period": "year",
+        "short_description": "",
+        "popular": false
+      }
+    ],
+    "justRide": [
+      {
+        "id": 250,
+        "vehicle_type": "bike",
+        "currency": "CHF",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 30,
+            "price": "1.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "1.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "2.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "3.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "4.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "5.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "6.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "12.0",
+            "currency": "CHF",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 5
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
+  },
   "Amsterdam": {
     "memberships": [
       {
