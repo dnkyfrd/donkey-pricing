@@ -5055,12 +5055,12 @@
   "Straubing": {
     "memberships": [
       {
-        "id": 2666,
-        "name": "Pay as you go",
-        "price": 5,
+        "id": 3524,
+        "name": "SparDonkey",
+        "price": 14.9,
         "currency": "EUR",
         "period": "month",
-        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
+        "short_description": "5 x 2 Stunden E-Lastenradmiete pro Monat kostenlos radeln, danach fallen Just-Ride-Preise an.",
         "popular": false
       }
     ],
@@ -6139,7 +6139,7 @@
         "price": 5,
         "currency": "EUR",
         "period": "month",
-        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing<br><br>Pedalea por un precio fijo bajo y ahorra hasta un 85% en costes de alquiler en comparación con nuestros precios habituales de Just Ride.",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
         "popular": false
       },
       {
@@ -6148,7 +6148,7 @@
         "price": 10,
         "currency": "EUR",
         "period": "month",
-        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day<br><br>Disfruta de 2 horas de tiempo libre al día, para los que necesitan una bici con frecuencia",
+        "short_description": "For those who need a bike regularly, enjoy 2 hours of free time every day",
         "popular": false
       },
       {
@@ -6157,7 +6157,7 @@
         "price": 19,
         "currency": "EUR",
         "period": "month",
-        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day<br><br>Conserva la bici más tiempo y disfruta de 12 horas de tiempo libre al día",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
         "popular": false
       }
     ],
