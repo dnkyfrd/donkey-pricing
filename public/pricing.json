@@ -3762,7 +3762,17 @@
     "warning": "No dayDeals."
   },
   "Turku": {
-    "memberships": [],
+    "memberships": [
+      {
+        "id": 2071,
+        "name": "Fölin kausikortti",
+        "price": 0,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      }
+    ],
     "justRide": [
       {
         "id": 665,
@@ -3830,7 +3840,7 @@
       }
     ],
     "dayDeals": [],
-    "warning": "No memberships. No dayDeals."
+    "warning": "No dayDeals."
   },
   "Geneva": {
     "memberships": [
@@ -6161,7 +6171,28 @@
         "popular": false
       }
     ],
-    "justRide": [],
+    "justRide": [
+      {
+        "id": 80,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.4",
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "2.0",
+          "starting_fee_duration_minutes": "15.0",
+          "cost_per_interval_in_major_units": "2.0",
+          "max_price_per_normalization_period_in_major_units": "25.0"
+        }
+      }
+    ],
     "dayDeals": [
       {
         "id": 163,
@@ -6214,8 +6245,7 @@
         "duration_hours": 24,
         "title": "Pedal bike"
       }
-    ],
-    "warning": "No justRide."
+    ]
   },
   "Copenhagen": {
     "memberships": [
