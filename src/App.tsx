@@ -16,9 +16,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   
   // Check if app is running on metropolradruhr.de
-  console.log(new URLSearchParams(window.location.search).get('domain'))
   const isMetropolRadRuhr = new URLSearchParams(window.location.search).get('domain') === 'metropolradruhr';
-  
 
   // Set default values for metropolradruhr.de
   useEffect(() => {
