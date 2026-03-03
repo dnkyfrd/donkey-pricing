@@ -13,7 +13,21 @@ function App() {
   const [pricingData, setPricingData] = useState<CityPricingData | null>(null);
   const [allPricing, setAllPricing] = useState<Record<string, any> | null>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);  
+  const [error, setError] = useState<string | null>(null);
+  
+  // Check if app is running on metropolradruhr.de
+  const isMetropolRadRuhr = typeof window !== 'undefined' && 
+    (window.location.hostname === 'www.metropolradruhr.de' || 
+     window.location.hostname === 'metropolradruhr.de' ||
+     window.location.hostname === "https://donkeyrepublic-4364147c6a4e554ab1071145.webflow.io/")     
+
+  // Set default values for metropolradruhr.de
+  useEffect(() => {
+    if (isMetropolRadRuhr) {
+      setSelectedCountry('Germany');
+      setSelectedCity('Ruhr Region');
+    }
+  }, [isMetropolRadRuhr]);  
 
 useEffect(() => {
   const loadGeo = async () => {
@@ -247,6 +261,7 @@ function findMatchingCountry(
     <div id="content-wrapper" className="w-full">
       <div className="py-8">
         {/* Location Selector */}
+        {!isMetropolRadRuhr && (
         <section className="pb-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-2xl shadow-lg border border-2 border-orange-500/60 p-6">
@@ -313,6 +328,7 @@ function findMatchingCountry(
             </div>
           </div>
         </section>
+        )}
 
         {/* Loading State */}
         {loading && (

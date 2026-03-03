@@ -135,6 +135,13 @@ export const cityData: ApiCity[] = [
         "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=54.3438625,10.1226193&filter_type=radius&radius=5000"
     },
     {
+        "city_name": "Ruhr Region",
+        "city_app_id": 785,
+        "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=51.545100,7.198100&country_code=DE",
+        "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=51.545100,7.198100",
+        "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=51.545100,7.198100&filter_type=radius&radius=5000"
+    },
+    {
         "city_name": "Turku",
         "city_app_id": 345,
         "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=60.4518126,22.2666303&country_code=FI",
