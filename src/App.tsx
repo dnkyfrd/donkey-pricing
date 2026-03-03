@@ -16,6 +16,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   
   // Check if app is running on metropolradruhr.de
+  console.log(window.location.hostname)
   const isMetropolRadRuhr = typeof window !== 'undefined' && 
     (window.location.hostname === 'www.metropolradruhr.de' || 
      window.location.hostname === 'metropolradruhr.de' ||
