@@ -3761,6 +3761,22 @@
     "dayDeals": [],
     "warning": "No dayDeals."
   },
+  "Ruhr Region": {
+    "memberships": [
+      {
+        "id": 2666,
+        "name": "Pay as you go",
+        "price": 5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ein Fahrrad in Ihrer Tasche, wann und wo immer Sie es brauchen, zu einem günstigen Festpreis pro Miete.",
+        "popular": false
+      }
+    ],
+    "justRide": [],
+    "dayDeals": [],
+    "warning": "No justRide. No dayDeals."
+  },
   "Turku": {
     "memberships": [
       {
