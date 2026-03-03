@@ -16,8 +16,9 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   
   // Check if app is running on metropolradruhr.de
-  console.log(window.location.hostname)
+  console.log(new URLSearchParams(window.location.search).get('domain'))
   const isMetropolRadRuhr = new URLSearchParams(window.location.search).get('domain') === 'metropolradruhr';
+  
 
   // Set default values for metropolradruhr.de
   useEffect(() => {
@@ -40,7 +41,7 @@ useEffect(() => {
         groupedCities
       );
 
-      if (matchedCountry) {
+      if (matchedCountry && !isMetropolRadRuhr) {
         console.log(matchedCountry)
         setSelectedCountry(matchedCountry);
       }
