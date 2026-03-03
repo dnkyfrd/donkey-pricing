@@ -19,7 +19,7 @@ function App() {
   const isMetropolRadRuhr = typeof window !== 'undefined' && 
     (window.location.hostname === 'www.metropolradruhr.de' || 
      window.location.hostname === 'metropolradruhr.de' ||
-     window.location.hostname === "https://donkeyrepublic-4364147c6a4e554ab1071145.webflow.io/")     
+     window.location.hostname === "donkeyrepublic-4364147c6a4e554ab1071145.webflow.io")     
 
   // Set default values for metropolradruhr.de
   useEffect(() => {
