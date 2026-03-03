@@ -17,10 +17,7 @@ function App() {
   
   // Check if app is running on metropolradruhr.de
   console.log(window.location.hostname)
-  const isMetropolRadRuhr = typeof window !== 'undefined' && 
-    (window.location.hostname === 'www.metropolradruhr.de' || 
-     window.location.hostname === 'metropolradruhr.de' ||
-     window.location.hostname === "donkeyrepublic-4364147c6a4e554ab1071145.webflow.io")     
+  const isMetropolRadRuhr = new URLSearchParams(window.location.search).get('domain') === 'metropolradruhr';
 
   // Set default values for metropolradruhr.de
   useEffect(() => {
