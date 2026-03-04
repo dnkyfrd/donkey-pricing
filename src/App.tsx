@@ -384,7 +384,8 @@ function findMatchingCountry(
                   return orderA - orderB;
                 })
                   .map((pricing) => (
-                  <div key={pricing.id} className="bg-white rounded-2xl shadow-lg border border-slate-200/50 p-6 flex flex-col">
+                  <div key={pricing.id} className="bg-gradient-to-br from-orange-50/30 via-white to-blue-50/30 rounded-2xl shadow-xl border-2 border-orange-200/50 p-6 flex flex-col hover:shadow-2xl hover:border-orange-400 hover:bg-gradient-to-br hover:from-orange-100/40 hover:via-white hover:to-blue-100/40 transition-all duration-300 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-200/30 to-blue-200/30 rounded-full -mr-10 -mt-10"></div>
                     <div className="flex items-center justify-center mb-4">
                       <div className={`w-10 h-10 bg-gradient-to-br ${pricing.vehicle_type.toLowerCase().includes('e') ? 'from-orange-100 to-orange-200' : 'from-blue-100 to-blue-200'} rounded-xl flex items-center justify-center mr-3`}>
                         {(() => {
@@ -417,7 +418,7 @@ function findMatchingCountry(
                             return (
                               <div
                                 key={tierIndex}
-                                className="bg-slate-50 rounded-lg p-3 text-center hover:bg-blue-50 hover:border-blue-200 border-2 border-transparent transition-all"
+                                className="bg-gradient-to-br from-slate-50 to-white rounded-lg p-3 text-center hover:bg-gradient-to-br hover:from-blue-50 hover:to-orange-50 hover:border-blue-300 border-2 border-transparent transition-all duration-300 hover:shadow-md"
                               >
                                 <div className="text-base font-bold text-slate-900">
                                   {`${formatPrice(tier.price, tier.currency)} ${tier.interval_label}`}
@@ -439,7 +440,7 @@ function findMatchingCountry(
                           return (
                             <div
                               key={tierIndex}
-                              className="bg-slate-50 rounded-lg p-3 text-center hover:bg-blue-50 hover:border-blue-200 border-2 border-transparent transition-all"
+                              className="bg-gradient-to-br from-slate-50 to-white rounded-lg p-3 text-center hover:bg-gradient-to-br hover:from-blue-50 hover:to-orange-50 hover:border-blue-300 border-2 border-transparent transition-all duration-300 hover:shadow-md"
                             >
                               <div className="text-sm font-medium text-slate-600 mb-1">
                                 {label}
@@ -487,14 +488,20 @@ function findMatchingCountry(
 
                   <div className="space-y-4">
                     {chunkMemberships(pricingData.memberships, 3).map((membershipRow) => (
-                      <div className="grid grid-cols-3 gap-3">
+                      <div className={`grid gap-3 ${
+                        membershipRow.length === 1 
+                          ? 'grid-cols-1 justify-center' 
+                          : membershipRow.length === 2 
+                            ? 'grid-cols-2 max-w-2xl mx-auto' 
+                            : 'grid-cols-3'
+                      }`}>
                         {membershipRow.map((membership) => (
                           <div
                             key={membership.id}
-                            className={`relative bg-white rounded-xl border-2 p-4 text-center transition-all hover:shadow-lg ${
+                            className={`relative bg-gradient-to-br from-orange-50/20 via-white to-blue-50/20 rounded-xl border-2 p-4 text-center transition-all hover:shadow-xl hover:scale-105 overflow-hidden ${
                               membership.popular 
-                                ? 'border-orange-500 shadow-md' 
-                                : 'border-slate-200/50 hover:border-orange-200'
+                                ? 'border-orange-400 shadow-lg bg-gradient-to-br from-orange-100/50 via-orange-50/30 to-white ring-2 ring-orange-300/50' 
+                                : 'border-orange-200/60 hover:border-orange-400 hover:bg-gradient-to-br hover:from-orange-100/30 hover:via-white hover:to-blue-100/30'
                             }`}
                           >
                             {membership.popular && (
@@ -540,7 +547,11 @@ function findMatchingCountry(
                     ) : ''}
                   </div>
                   {pricingData.dayDeals.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className={`grid gap-4 ${
+                      pricingData.dayDeals.length === 1 
+                        ? 'grid-cols-1 justify-center max-w-md mx-auto' 
+                        : 'grid-cols-1 md:grid-cols-2'
+                    }`}>
                       {[...pricingData.dayDeals]
     .sort((a, b) => {
       // Pedal bike (bike) first, then E-bike
@@ -552,7 +563,8 @@ function findMatchingCountry(
                         const Icon = getBikeTypeIcon(dayDeal.bike_type ?? '');
                         const isEBike = (dayDeal.bike_type ?? '').toLowerCase() === 'ebike';
                         return (
-                          <div key={dayDeal.id} className="bg-white rounded-xl border border-slate-200/50 p-6 flex flex-col items-center hover:shadow-lg hover:border-orange-200 transition-all">
+                          <div key={dayDeal.id} className="bg-gradient-to-br from-orange-50/30 via-white to-blue-50/30 rounded-xl border-2 border-orange-200/50 p-6 flex flex-col items-center hover:shadow-xl hover:border-orange-400 hover:bg-gradient-to-br hover:from-orange-100/40 hover:via-white hover:to-blue-100/40 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-orange-200/30 to-blue-200/30 rounded-full -mr-8 -mt-8"></div>
     {/* Row 1: Icon and bike type label */}
     <div className={`w-12 h-12 mb-3 bg-gradient-to-br ${isEBike ? 'from-orange-100 to-orange-200' : 'from-blue-100 to-blue-200'} rounded-xl flex items-center justify-center`}>
       <Icon className={`w-6 h-6 ${isEBike ? 'text-orange-600' : 'text-blue-600'}`} />

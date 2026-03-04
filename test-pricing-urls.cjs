@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 // URLs to test for Ruhr Region (updated coordinates)
 const urls = {
-  memberships: 'https://stables.donkey.bike/api/public/plans?pricing_type=account&account_id=977',
+  memberships: 'https://stables.donkey.bike/api/public/plans?location=51.545100,7.198100&country_code=DE',
   just_ride: 'https://stables.donkey.bike/api/public/pricings?pricing_type=account&account_id=977',
   day_deals: 'https://stables.donkey.bike/api/public/nearby?filter_type=account&account_id=977'
 };
