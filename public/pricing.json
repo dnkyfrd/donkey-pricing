@@ -3778,72 +3778,21 @@
         "id": 868,
         "vehicle_type": "bike",
         "currency": "EUR",
-        "strategy": "per_tier_billing",
+        "strategy": "per_interval_billing",
         "reservation_enabled": false,
         "reservation_fee": null,
         "reservation_time_minutes": null,
         "theft_insurance": "2.0",
         "theft_insurance_factor": "0.15",
         "theft_insurance_hour_price": 0,
-        "duration": [
-          {
-            "duration_minutes": 60,
-            "price": "1.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 120,
-            "price": "2.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 240,
-            "price": "4.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 360,
-            "price": "6.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 720,
-            "price": "10.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 1440,
-            "price": "10.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 2880,
-            "price": "20.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          },
-          {
-            "duration_minutes": 4320,
-            "price": "30.0",
-            "currency": "EUR",
-            "is_interval_pricing": false,
-            "interval_label": ""
-          }
-        ],
-        "additional_day": 7
+        "duration": {
+          "interval_length_minutes": "60.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "0.0",
+          "starting_fee_duration_minutes": "0.0",
+          "cost_per_interval_in_major_units": "1.0",
+          "max_price_per_normalization_period_in_major_units": "10.0"
+        }
       }
     ],
     "dayDeals": [
