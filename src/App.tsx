@@ -4,10 +4,15 @@ import { groupedCities } from './data/cities';
 // import { fetchCityPricing } from './services/api';
 import { CityPricingData, MembershipPlan } from './types/api';
 import { LoadingSpinner } from './components/LoadingSpinner';
+import { useTranslation } from './hooks/useTranslation';
 
 function App() {
-  const [selectedCountry, setSelectedCountry] = useState('Select your country');
-  const [selectedCity, setSelectedCity] = useState('...');
+  const params = new URLSearchParams(window.location.search);
+  const locale = params.get('locale') || 'en';
+  const { t } = useTranslation(locale);
+  
+  const [selectedCountry, setSelectedCountry] = useState(t('select_country'));
+  const [selectedCity, setSelectedCity] = useState(t('select_city'));
   const [countryDropdownOpen, setCountryDropdownOpen] = useState(false);
   const [cityDropdownOpen, setCityDropdownOpen] = useState(false);
   const [pricingData, setPricingData] = useState<CityPricingData | null>(null);
@@ -88,10 +93,10 @@ function findMatchingCountry(
   type VehicleType = 'bike' | 'ebike' | 'cargo' | 'ecargo';
 
   const vehicleLabels: Record<VehicleType, string> = {
-    bike: 'Classic Bike',
-    ebike: 'Electric Bike',
-    cargo: 'Cargo Bike',
-    ecargo: 'E-Cargo Bike',
+    bike: t('classic_bike'),
+    ebike: t('electric_bike'),
+    cargo: t('cargo_bike'),
+    ecargo: t('ecargo_bike'),
   };
 
   useEffect(() => {
@@ -264,7 +269,7 @@ function findMatchingCountry(
             <div className="bg-white rounded-2xl shadow-lg border border-2 border-orange-500/60 p-6">
               <div className="flex items-center justify-center space-x-1 mb-6">
                 <MapPin className="w-5 h-5 text-orange-500" />
-                <h2 className="text-lg font-semibold text-slate-900">Select Your Location</h2>
+                <h2 className="text-lg font-semibold text-slate-900">{t('select_location')}</h2>
               </div>
               
               <div className="grid md:grid-cols-2 gap-4">
@@ -333,7 +338,7 @@ function findMatchingCountry(
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="bg-white rounded-2xl shadow-lg border border-slate-200/50 p-12 text-center">
                 <LoadingSpinner size="lg" className="mx-auto mb-4" />
-                <p className="text-slate-600">Loading pricing data...</p>
+                <p className="text-slate-600">{t('loading_pricing')}</p>
               </div>
             </div>
           </section>
@@ -356,8 +361,8 @@ function findMatchingCountry(
           <section className="pb-8">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-slate-900 mb-2">Just Ride</h2>
-                <p className="text-slate-600">Perfect for short rides</p>
+                <h2 className="text-2xl font-bold text-slate-900 mb-2">{t('just_ride')}</h2>
+                <p className="text-slate-600">{t('perfect_for_short_rides')}</p>
               </div>
 
               {/* Side-by-side bike/ebike */}
@@ -394,7 +399,7 @@ function findMatchingCountry(
   })()}
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-slate-900"> {vehicleLabels[pricing.vehicle_type as VehicleType] || 'Unknown Bike'}</h3>
+                        <h3 className="text-lg font-bold text-slate-900"> {vehicleLabels[pricing.vehicle_type as VehicleType] || t('unknown_bike')}</h3>
                       </div>
                     </div>
                     {/* Pricing Tiers */}
@@ -457,7 +462,7 @@ function findMatchingCountry(
                     {/* Additional Day Price */}
                     {pricing.additional_day && (
                       <div className="mt-2 text-center">
-                        <span className="text-sm text-slate-600">Additional day:</span> <span className="font-bold text-slate-900">{formatPrice(pricing.additional_day, pricing.currency)}</span>
+                        <span className="text-sm text-slate-600">{t('additional_day')}</span> <span className="font-bold text-slate-900">{formatPrice(pricing.additional_day, pricing.currency)}</span>
                       </div>
                     )}
                   </div>
@@ -475,14 +480,14 @@ function findMatchingCountry(
               {pricingData && pricingData.memberships.length > 0 && (
                 <div>
                   <div className="text-center mb-6">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-2">Memberships</h2>
-                    <p className="text-slate-600">Save more with our membership plans</p>
+                    <h2 className="text-2xl font-bold text-slate-900 mb-2">{t('memberships')}</h2>
+                    <p className="text-slate-600">{t('save_more')}</p>
                     <button
                         className="w-80 mt-5 px-3 py-2 rounded-lg text-sm font-semibold transition-all bg-slate-800 text-white hover:bg-slate-700"
                         style={{ backgroundColor: '#ff6400' }}
                         onClick={() => window.open('https://dnky.bike/7jIsFIUKoHb', '_blank', 'noopener,noreferrer')}
                       >
-                        Get Started
+                        {t('get_started')}
                       </button>
                   </div>
 
@@ -508,7 +513,7 @@ function findMatchingCountry(
                               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
                                 <span className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center space-x-1">
                                   <Star className="w-3 h-3" />
-                                  <span>Popular</span>
+                                  <span>{t('popular')}</span>
                                 </span>
                               </div>
                             )}
@@ -533,8 +538,8 @@ function findMatchingCountry(
               {pricingData && (
                 <div>
                   <div className="text-center mb-6">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-2">Passes</h2>
-                    <p className="text-slate-600">Perfect for day trip or weekend adventures.</p>
+                    <h2 className="text-2xl font-bold text-slate-900 mb-2">{t('passes')}</h2>
+                    <p className="text-slate-600">{t('perfect_for_day_trips')}</p>
 
                     {pricingData.dayDeals.length > 0 ? (
                     <button
@@ -542,7 +547,7 @@ function findMatchingCountry(
                         style={{ backgroundColor: '#ff6400' }}
                         onClick={() => window.open('https://dnky.bike/7jIsFIUKoHb', '_blank', 'noopener,noreferrer')}
                       >
-                        Get started
+                        {t('get_started_alt')}
                       </button>
                     ) : ''}
                   </div>
@@ -590,8 +595,8 @@ function findMatchingCountry(
                   ) : (
                     <div className="bg-white rounded-xl border border-slate-200/50 p-8 text-center flex flex-col items-center justify-center">
                       <AlertCircle className="w-10 h-10 text-slate-400 mb-2" />
-                      <h3 className="text-lg font-semibold text-slate-900 mb-2">No Passes Available</h3>
-                      <p className="text-slate-600">There are currently no passes offered for {selectedCity}.</p>
+                      <h3 className="text-lg font-semibold text-slate-900 mb-2">{t('no_passes_available')}</h3>
+                      <p className="text-slate-600">{t('no_passes_description')} {selectedCity}.</p>
                     </div>
                   )}
                 </div>
@@ -606,8 +611,8 @@ function findMatchingCountry(
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="bg-white rounded-2xl shadow-lg border border-slate-200/50 p-12 text-center">
                 <AlertCircle className="w-12 h-12 text-slate-400 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">No Pricing Data Available</h3>
-                <p className="text-slate-600">Pricing information is not currently available for {selectedCity}.</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">{t('no_pricing_data')}</h3>
+                <p className="text-slate-600">{t('no_pricing_description')} {selectedCity}.</p>
               </div>
             </div>
           </section>
