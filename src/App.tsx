@@ -213,9 +213,21 @@ function findMatchingCountry(
 
   function getFreeTimeLabel(value: string | undefined): string {
     if (!value || typeof value !== 'string') return '';
-    const seconds = parseInt(value.replace('PT', '').replace('S', ''), 10);
-    const hours = seconds / 3600;    
-    return `${hours} hour${hours !== 1 ? 's' : ''}`;
+    
+    // Handle ISO duration format like PT86400S (86400 seconds = 24 hours)
+    if (value.startsWith('PT') && value.endsWith('S')) {
+      const seconds = parseInt(value.replace('PT', '').replace('S', ''), 10);
+      const hours = seconds / 3600;
+      return `${hours} hour${hours !== 1 ? 's' : ''}`;
+    }
+    
+    // Handle ISO duration format like PT24H (24 hours)
+    if (value.startsWith('PT') && value.endsWith('H')) {
+      const hours = parseInt(value.replace('PT', '').replace('H', ''), 10);
+      return `${hours} hour${hours !== 1 ? 's' : ''}`;
+    }
+    
+    return value;
   }
 
   const getDurationLabel = (minutes: number) => {
@@ -412,7 +424,10 @@ function findMatchingCountry(
                           </div>
                         )}
                         <div className="text-base font-bold text-slate-900 mb-1">
-                          {`${formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency)} every ${Number(pricing.duration.interval_length_minutes)} minutes`}
+                          {t('every_x_minutes', { 
+                            price: formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency), 
+                            minutes: Number(pricing.duration.interval_length_minutes) 
+                          })}
                         </div>                     
                       </div>
                     ) : (
@@ -582,10 +597,34 @@ function findMatchingCountry(
     {/* Row 3: Duration */}
     <div className="text-sm text-slate-600 mb-2 mt-3 text-center">
     {dayDeal.free_time?.[isEBike ? 'ebike' : 'bike']
-      ? `${getFreeTimeLabel(dayDeal.free_time[isEBike ? 'ebike' : 'bike'])} of included time`
+      ? (() => {
+          const freeTimeStr = dayDeal.free_time![isEBike ? 'ebike' : 'bike'];
+          let hours = 0;
+          
+          // Handle ISO duration format like PT86400S (86400 seconds = 24 hours)
+          if (freeTimeStr.startsWith('PT') && freeTimeStr.endsWith('S')) {
+            const seconds = parseInt(freeTimeStr.replace('PT', '').replace('S', ''), 10);
+            hours = seconds / 3600;
+          }
+          // Handle ISO duration format like PT24H (24 hours)
+          else if (freeTimeStr.startsWith('PT') && freeTimeStr.endsWith('H')) {
+            hours = parseInt(freeTimeStr.replace('PT', '').replace('H', ''), 10);
+          }
+          
+          return hours > 0 ? t('hours_included', { hours }) : '';
+        })()
       : ''}
   </div>
-    <div className="text-sm text-slate-600 mb-4 text-center">Valid for {getDurationLabel((dayDeal.duration_hours ?? 0) * 60)}</div>
+    <div className="text-sm text-slate-600 mb-4 text-center">
+      {(() => {
+        const totalMinutes = (dayDeal.duration_hours ?? 0) * 60;
+        if (totalMinutes >= 1440) {
+          const days = Math.round(totalMinutes / 1440);
+          return t(days === 1 ? 'valid_for_x_day' : 'valid_for_x_days', { days });
+        }
+        return `Valid for ${getDurationLabel(totalMinutes)}`;
+      })()}
+    </div>
 
 
   </div>

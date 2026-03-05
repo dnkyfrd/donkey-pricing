@@ -22,7 +22,11 @@ export const translations = {
     'additional_day': 'Additional day:',
     'popular': 'Popular',
     'get_started_alt': 'Get started',
-    'unknown_bike': 'Unknown Bike'
+    'unknown_bike': 'Unknown Bike',
+    'every_x_minutes': '{{price}} every {{minutes}} minutes',
+    'hours_included': '{{hours}} hours of included time',
+    'valid_for_x_day': 'Valid for {{days}} day',
+    'valid_for_x_days': 'Valid for {{days}} days'
   },
   de: {
     'select_location': 'Wählen Sie Ihren Standort',
@@ -47,7 +51,11 @@ export const translations = {
     'additional_day': 'Zusätzlicher Tag:',
     'popular': 'Beliebt',
     'get_started_alt': 'Loslegen',
-    'unknown_bike': 'Unbekanntes Fahrrad'
+    'unknown_bike': 'Unbekanntes Fahrrad',
+    'every_x_minutes': '{{price}} alle {{minutes}} Minuten',
+    'hours_included': '{{hours}} Stunden inkludierte Zeit',
+    'valid_for_x_day': 'Gültig für {{days}} Tag',
+    'valid_for_x_days': 'Gültig für {{days}} Tage'
   }
 };
 
