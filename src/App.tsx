@@ -514,7 +514,7 @@ function findMatchingCountry(
                           <h3 className="text-base font-bold text-slate-900 mb-2">{t('student_plan')}</h3>
                           <div className="mb-3">
                             <span className="text-xl font-bold text-slate-900">€2</span>
-                            <div className="text-xs text-slate-600">{t('per_month')}</div>
+                            <div className="text-xs text-slate-600">{t('per_semester')}</div>
                           </div>
                           <div className="space-y-1 text-xs text-slate-600">
                             <div>{t('first_x_minutes_included', { minutes: 60 })}</div>
