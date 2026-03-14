@@ -5126,6 +5126,15 @@
         "period": "month",
         "short_description": "5 x 2 Stunden E-Lastenradmiete pro Monat kostenlos radeln, danach fallen Just-Ride-Preise an.",
         "popular": false
+      },
+      {
+        "id": 3570,
+        "name": "Pendler Donkeys",
+        "price": 19.99,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
       }
     ],
     "justRide": [
