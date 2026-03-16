@@ -47,7 +47,7 @@ export const translations = {
     'per_month': '/Monat',
     'per_semester': '/Semester',
     'get_started': 'Loslegen',
-    'passes': 'Pässe',
+    'passes': 'Tagespass',
     'perfect_for_day_trips': 'Perfekt für Tagesausflüge oder Wochenendabenteuer',
     'no_passes_available': 'Keine Pässe verfügbar',
     'no_passes_description': 'Derzeit werden keine Pässe angeboten für',
