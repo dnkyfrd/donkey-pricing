@@ -3764,9 +3764,9 @@
   "Ruhr Region": {
     "memberships": [
       {
-        "id": 3566,
+        "id": 3571,
         "name": "Daily Rider",
-        "price": 7.5,
+        "price": 0,
         "currency": "EUR",
         "period": "month",
         "short_description": "",
