@@ -251,6 +251,21 @@ function findMatchingCountry(
   return (type === 'ebike' || type === 'electric') ? Zap : Bike;
 };
 
+  // Format normalization period minutes into a human-readable string
+  function formatNormalizationPeriod(minutes: number): string {
+    if (minutes >= 10080) {
+      const weeks = Math.round(minutes / 10080);
+      return weeks === 1 ? t('per_week') : `${weeks} weeks`;
+    } else if (minutes >= 1440) {
+      const days = Math.round(minutes / 1440);
+      return days === 1 ? t('per_day') : `${days} days`;
+    } else if (minutes >= 60) {
+      const hours = Math.round(minutes / 60);
+      return hours === 1 ? t('per_hour') : `${hours} hours`;
+    }
+    return `${minutes} min`;
+  }
+
   // Type guard for interval-based pricing
   function isIntervalPricing(duration: any): duration is import('./types/api').IntervalPricing {
     return (
@@ -418,17 +433,25 @@ function findMatchingCountry(
                     {/* Interval-based (Copenhagen-style) pricing support */}
                     {isIntervalPricing(pricing.duration) ? (
                       <div className="rounded-lg p-4 text-center">
-                        {Number(pricing.duration.starting_fee_in_major_units) !== Number(pricing.duration.cost_per_interval_in_major_units) && (
+                        {!(Number(pricing.duration.starting_fee_in_major_units) === 0 && Number(pricing.duration.starting_fee_duration_minutes) === 0) && (
                           <div className="text-base font-bold text-slate-900 mb-1">
                             {`${formatPrice(Number(pricing.duration.starting_fee_in_major_units), pricing.currency)} for first ${Number(pricing.duration.starting_fee_duration_minutes)} minutes`}
                           </div>
                         )}
                         <div className="text-base font-bold text-slate-900 mb-1">
-                          {t('every_x_minutes', { 
-                            price: formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency), 
-                            minutes: Number(pricing.duration.interval_length_minutes) 
+                          {t('every_x_minutes', {
+                            price: formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency),
+                            minutes: Number(pricing.duration.interval_length_minutes)
                           })}
-                        </div>                     
+                        </div>
+                        {pricing.duration.max_price_per_normalization_period_in_major_units && Number(pricing.duration.max_price_per_normalization_period_in_major_units) > 0 && (
+                          <div className="text-sm text-slate-500 mt-1">
+                            {t('max_price_per_period', {
+                              price: formatPrice(Number(pricing.duration.max_price_per_normalization_period_in_major_units), pricing.currency),
+                              period: formatNormalizationPeriod(Number(pricing.duration.normalization_period_mins))
+                            })}
+                          </div>
+                        )}
                       </div>
                     ) : (
                       <div className="grid grid-cols-2 md:grid-cols-2 gap-3 mb-4">
