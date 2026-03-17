@@ -531,7 +531,7 @@ function findMatchingCountry(
 
                   <div className="space-y-4">
                     {/* Student Plan - Only show for MetropolRadRuhr */}
-                    {isMetropolRadRuhr && (
+                    {/* {isMetropolRadRuhr && (
                       <div className="grid gap-3 grid-cols-1 justify-center">
                         <div className="relative bg-gradient-to-br from-orange-50/20 via-white to-blue-50/20 rounded-xl border-2 p-4 text-center transition-all hover:shadow-xl hover:scale-105 overflow-hidden border-orange-200/60 hover:border-orange-400 hover:bg-gradient-to-br hover:from-orange-100/30 hover:via-white hover:to-blue-100/30">
                           <h3 className="text-base font-bold text-slate-900 mb-2">{t('student_plan')}</h3>
@@ -546,7 +546,7 @@ function findMatchingCountry(
                           </div>
                         </div>
                       </div>
-                    )}
+                    )} */}
                     
                     {chunkMemberships(pricingData.memberships, 3).map((membershipRow) => (
                       <div className={`grid gap-3 ${
