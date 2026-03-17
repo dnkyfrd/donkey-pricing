@@ -67,27 +67,40 @@ async function fetchPricing(city) {
 
   // MEMBERSHIPS
   const membershipsRaw = await safeFetch(city.memberships_api_url, { 'accept': 'application/com.donkeyrepublic.v8', 'User-Agent': 'Mozilla/5.0 (compatible; DonkeyRepublic-PricingScript/1.0)' }, 'memberships');
+  const _debug3571 = Array.isArray(membershipsRaw) ? membershipsRaw.find(p => p.id === 3571) : (membershipsRaw?.plans || []).find(p => p.id === 3571);
+  if (_debug3571) console.log('[DEBUG] membership 3571:', JSON.stringify(_debug3571, null, 2));
+  const _debug3230 = Array.isArray(membershipsRaw) ? membershipsRaw.find(p => p.id === 3230) : (membershipsRaw?.plans || []).find(p => p.id === 3230);
+  if (_debug3230) console.log('[DEBUG] membership 3230 raw:', JSON.stringify(_debug3230, null, 2));
   let memberships = [];
+  function mapPlan(plan, idx) {
+    const monthlyPrice = parseFloat(plan.price) || 0;
+    const yearlyOptions = Array.isArray(plan.payment_options)
+      ? plan.payment_options.filter(o => o.payment_option_type === 'yearly_discount' && o.yearly_discount)
+      : [];
+    const bestDiscount = yearlyOptions.reduce((max, o) => Math.max(max, parseFloat(o.yearly_discount)), 0);
+    const yearlyPrice = bestDiscount > 0
+      ? Math.round(monthlyPrice * 12 * (1 - bestDiscount / 100))
+      : undefined;
+    const timeLimitMinutes = Array.isArray(plan.plan_items) && plan.plan_items[0]?.time_limit
+      ? plan.plan_items[0].time_limit
+      : undefined;
+    return {
+      id: plan.id || `plan-${idx}`,
+      name: plan.name || plan.title || 'Plan',
+      price: monthlyPrice,
+      currency: plan.currency || '',
+      period: plan.interval || 'month',
+      short_description: plan.short_description || plan.description || '',
+      popular: !!plan.featured,
+      ...(timeLimitMinutes !== undefined && { time_limit_minutes: timeLimitMinutes }),
+      ...(yearlyPrice !== undefined && { yearly_price: yearlyPrice }),
+    };
+  }
+
   if (Array.isArray(membershipsRaw)) {
-    memberships = membershipsRaw.map((plan, idx) => ({
-      id: plan.id || `plan-${idx}`,
-      name: plan.name || plan.title || 'Plan',
-      price: parseFloat(plan.price) || 0,
-      currency: plan.currency || '',
-      period: plan.interval || 'month',
-      short_description: plan.short_description || plan.description || '',
-      popular: !!plan.featured
-    }));
+    memberships = membershipsRaw.map(mapPlan);
   } else if (membershipsRaw && Array.isArray(membershipsRaw.plans)) {
-    memberships = membershipsRaw.plans.map((plan, idx) => ({
-      id: plan.id || `plan-${idx}`,
-      name: plan.name || plan.title || 'Plan',
-      price: parseFloat(plan.price) || 0,
-      currency: plan.currency || '',
-      period: plan.interval || 'month',
-      short_description: plan.short_description || plan.description || '',
-      popular: !!plan.featured
-    }));
+    memberships = membershipsRaw.plans.map(mapPlan);
   } else if (membershipsRaw && membershipsRaw.plan) {
     memberships = [membershipsRaw.plan];
   } else {

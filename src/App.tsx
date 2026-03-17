@@ -578,10 +578,20 @@ function findMatchingCountry(
                             {membership.short_description && (
                               <p className="text-xs text-slate-600 mb-3">{membership.short_description}</p>
                             )}
-                            <div className="mb-3">
+                            {membership.time_limit_minutes && (
+                              <div className="text-xs text-slate-500 mb-2">
+                                {t('x_per_day', { duration: getDurationLabel(membership.time_limit_minutes) })}
+                              </div>
+                            )}
+                            <div className="mb-1">
                               <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
-                              <div className="text-xs text-slate-600">/{membership.period}</div>
+                              <div className="text-xs text-slate-600">{membership.period === 'semester' ? t('per_semester') : t('per_month')}</div>
                             </div>
+                            {membership.yearly_price && (
+                              <div className="text-xs text-slate-500">
+                                {formatPrice(Math.round(membership.yearly_price), membership.currency)}{t('per_year')}
+                              </div>
+                            )}
                           </div>
                         ))}
                       </div>

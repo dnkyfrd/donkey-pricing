@@ -34,6 +34,8 @@ export const translations = {
     'per_day': 'per day',
     'per_week': 'per week',
     'per_hour': 'per hour',
+    'x_per_day': '{{duration}} per day',
+    'per_year': '/year',
     'hours_included': '{{hours}} hours of included time',
     'valid_for_x_day': 'Valid for {{days}} day',
     'valid_for_x_days': 'Valid for {{days}} days'
@@ -73,6 +75,8 @@ export const translations = {
     'per_day': 'Tagespreis',
     'per_week': 'Wochenpreis',
     'per_hour': 'Stundenpreis',
+    'x_per_day': '{{duration}} am Tag inklusive',
+    'per_year': '/Jahr',
     'hours_included': '{{hours}} Stunden inkludierte Zeit',
     'valid_for_x_day': 'Gültig für {{days}} Tag',
     'valid_for_x_days': 'Gültig für {{days}} Tage'

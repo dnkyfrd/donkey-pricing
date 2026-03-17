@@ -14,6 +14,8 @@ export interface MembershipPlan {
   period: string;
   short_description?: string;
   popular?: boolean;
+  time_limit_minutes?: number;
+  yearly_price?: number;
 }
 
 export interface BikeType {
