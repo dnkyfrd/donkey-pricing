@@ -3867,6 +3867,24 @@
         "period": "month",
         "short_description": "",
         "popular": false
+      },
+      {
+        "id": 3579,
+        "name": "Kuukausituote",
+        "price": 10.5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false
+      },
+      {
+        "id": 3578,
+        "name": "Kausituote 2026",
+        "price": 46,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false
       }
     ],
     "justRide": [
