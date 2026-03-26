@@ -1088,6 +1088,16 @@
         "yearly_price": 240
       },
       {
+        "id": 3586,
+        "name": "Donkey Community",
+        "price": 49,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "yearly_price": 348
+      },
+      {
         "id": 2927,
         "name": "Daily Rider",
         "price": 115,
@@ -1108,6 +1118,17 @@
         "popular": false,
         "time_limit_minutes": 720,
         "yearly_price": 1701
+      },
+      {
+        "id": 3587,
+        "name": "Donkey Commuter",
+        "price": 195,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "time_limit_minutes": 60,
+        "yearly_price": 1788
       }
     ],
     "justRide": [],
@@ -5815,6 +5836,16 @@
         "yearly_price": 240
       },
       {
+        "id": 3586,
+        "name": "Donkey Community",
+        "price": 49,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "yearly_price": 348
+      },
+      {
         "id": 2927,
         "name": "Daily Rider",
         "price": 115,
@@ -5835,6 +5866,17 @@
         "popular": false,
         "time_limit_minutes": 720,
         "yearly_price": 1701
+      },
+      {
+        "id": 3587,
+        "name": "Donkey Commuter",
+        "price": 195,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "time_limit_minutes": 60,
+        "yearly_price": 1788
       }
     ],
     "justRide": [
@@ -6750,6 +6792,16 @@
         "yearly_price": 240
       },
       {
+        "id": 3586,
+        "name": "Donkey Community",
+        "price": 49,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "yearly_price": 348
+      },
+      {
         "id": 2927,
         "name": "Daily Rider",
         "price": 115,
@@ -6770,6 +6822,17 @@
         "popular": false,
         "time_limit_minutes": 720,
         "yearly_price": 1701
+      },
+      {
+        "id": 3587,
+        "name": "Donkey Commuter",
+        "price": 195,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "time_limit_minutes": 60,
+        "yearly_price": 1788
       }
     ],
     "justRide": [
