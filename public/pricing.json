@@ -3970,7 +3970,7 @@
         "price": "8.0",
         "currency": "EUR",
         "account_id": 798,
-        "tag": null,
+        "tag": "Weekend Offer",
         "name": null,
         "auto_renewable": false,
         "bike_type": "bike",
