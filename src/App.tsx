@@ -581,12 +581,12 @@ function findMatchingCountry(
                               <div className="bg-slate-50 rounded-lg px-3 py-2 mb-3 space-y-1">
                                 {membership.plan_items.map((item) => (
                                   <div key={item.vehicle_type} className="flex items-center justify-between gap-2 text-xs">
-                                    <span className="flex items-center gap-1 text-slate-600 font-medium">
+                                    <span className="flex items-center gap-1 text-slate-600 font-medium whitespace-nowrap">
                                       {item.vehicle_type === 'ebike'
                                         ? <><Zap className="w-3 h-3 text-yellow-500" />E-bike</>
                                         : <><Bike className="w-3 h-3 text-slate-500" />Bike</>}
                                     </span>
-                                    <span className="text-slate-500">
+                                    <span className="text-slate-500 whitespace-nowrap">
                                       {item.time_limit
                                         ? t('x_per_day', { duration: getDurationLabel(item.time_limit) })
                                         : item.custom_price != null && item.custom_step != null
