@@ -1,4 +1,4 @@
-import { ApiCity, MembershipPlan, DayDeal, JustRidePricing } from '../types/api';
+import { ApiCity, MembershipPlan, MembershipPlanItem, DayDeal, JustRidePricing } from '../types/api';
 
 const API_HEADERS_V8 = {
   'accept': 'application/com.donkeyrepublic.v8',
@@ -51,21 +51,34 @@ export async function fetchMemberships(city: ApiCity): Promise<MembershipPlan[]>
     // Transform API response to our format
     const memberships: MembershipPlan[] = [];
     if (Array.isArray(data)) {
-      data.forEach((plan: { id?: string; name?: string; title?: string; price?: number | string; currency?: string; interval?: string; short_description?: string; description?: string; featured?: boolean }) => {
+      data.forEach((plan: any) => {
         if (plan.price && plan.currency) {
-          let displayPrice = Number(plan.price);
-          const yearlyDiscount = (plan as any).yearly_discount;
-          if (yearlyDiscount && !isNaN(Number(yearlyDiscount))) {
-            displayPrice = Number(yearlyDiscount);
-          }
+          const monthlyPrice = parseFloat(plan.price) || 0;
+          const yearlyOptions = Array.isArray(plan.payment_options)
+            ? plan.payment_options.filter((o: any) => o.payment_option_type === 'yearly_discount' && o.yearly_discount)
+            : [];
+          const bestDiscount = yearlyOptions.reduce((max: number, o: any) => Math.max(max, parseFloat(o.yearly_discount)), 0);
+          const yearlyPrice = bestDiscount > 0
+            ? Math.round(monthlyPrice * 12 * (1 - bestDiscount / 100))
+            : undefined;
+          const planItems: MembershipPlanItem[] | undefined = Array.isArray(plan.plan_items) && plan.plan_items.length > 0
+            ? plan.plan_items.map((item: any) => ({
+                vehicle_type: item.vehicle_type || '',
+                time_limit: item.time_limit || null,
+                custom_price: item.custom_price ? parseFloat(item.custom_price) : null,
+                custom_step: item.custom_step || null,
+              }))
+            : undefined;
           memberships.push({
             id: plan.id || `plan-${memberships.length}`,
             name: plan.name || plan.title || 'Plan',
-            price: Math.round(displayPrice),
+            price: monthlyPrice,
             currency: plan.currency,
             period: plan.interval || 'month',
             short_description: plan.short_description || plan.description || '',
-            popular: plan.featured || false
+            popular: plan.featured || false,
+            ...(planItems !== undefined && { plan_items: planItems }),
+            ...(yearlyPrice !== undefined && { yearly_price: yearlyPrice }),
           });
         }
       });
@@ -178,13 +191,7 @@ export async function fetchJustRidePricing(city: ApiCity): Promise<JustRidePrici
             theft_insurance: pricing.theft_insurance || 0,
             theft_insurance_factor: pricing.theft_insurance_factor,
             theft_insurance_hour_price: pricing.theft_insurance_hour_price || 0,
-            duration: [{
-              duration_minutes: Number(pricing.duration.interval_length_minutes),
-              price: Number(pricing.duration.starting_fee_in_major_units),
-              currency: pricing.currency || 'EUR',
-              is_interval_pricing: true,
-              interval_label: `every ${Number(pricing.duration.interval_length_minutes)} minutes`
-            }],
+            duration: pricing.duration,
             additional_day: undefined
           });
         } else if (pricing.duration && typeof pricing.duration === 'object' && !Array.isArray(pricing.duration)) {

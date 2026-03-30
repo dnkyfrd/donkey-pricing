@@ -6,6 +6,13 @@ export interface ApiCity {
   just_ride_api_url: string;
 }
 
+export interface MembershipPlanItem {
+  vehicle_type: string;
+  time_limit: number | null;
+  custom_price: number | null;
+  custom_step: number | null;
+}
+
 export interface MembershipPlan {
   id: string;
   name: string;
@@ -14,7 +21,7 @@ export interface MembershipPlan {
   period: string;
   short_description?: string;
   popular?: boolean;
-  time_limit_minutes?: number;
+  plan_items?: MembershipPlanItem[];
   yearly_price?: number;
 }
 

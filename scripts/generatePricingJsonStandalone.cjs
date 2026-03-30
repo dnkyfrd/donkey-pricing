@@ -81,8 +81,13 @@ async function fetchPricing(city) {
     const yearlyPrice = bestDiscount > 0
       ? Math.round(monthlyPrice * 12 * (1 - bestDiscount / 100))
       : undefined;
-    const timeLimitMinutes = Array.isArray(plan.plan_items) && plan.plan_items[0]?.time_limit
-      ? plan.plan_items[0].time_limit
+    const planItems = Array.isArray(plan.plan_items) && plan.plan_items.length > 0
+      ? plan.plan_items.map(item => ({
+          vehicle_type: item.vehicle_type || '',
+          time_limit: item.time_limit || null,
+          custom_price: item.custom_price ? parseFloat(item.custom_price) : null,
+          custom_step: item.custom_step || null,
+        }))
       : undefined;
     return {
       id: plan.id || `plan-${idx}`,
@@ -92,7 +97,7 @@ async function fetchPricing(city) {
       period: plan.interval || 'month',
       short_description: plan.short_description || plan.description || '',
       popular: !!plan.featured,
-      ...(timeLimitMinutes !== undefined && { time_limit_minutes: timeLimitMinutes }),
+      ...(planItems !== undefined && { plan_items: planItems }),
       ...(yearlyPrice !== undefined && { yearly_price: yearlyPrice }),
     };
   }

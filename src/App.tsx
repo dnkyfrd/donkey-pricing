@@ -439,10 +439,9 @@ function findMatchingCountry(
                           </div>
                         )}
                         <div className="text-base font-bold text-slate-900 mb-1">
-                          {t('every_x_minutes', {
-                            price: formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency),
-                            minutes: Number(pricing.duration.interval_length_minutes)
-                          })}
+                          {Number(pricing.duration.interval_length_minutes) === 1
+                            ? t('every_x_minute', { price: formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency) })
+                            : t('every_x_minutes', { price: formatPrice(Number(pricing.duration.cost_per_interval_in_major_units), pricing.currency), minutes: Number(pricing.duration.interval_length_minutes) })}
                         </div>
                         {pricing.duration.max_price_per_normalization_period_in_major_units && Number(pricing.duration.max_price_per_normalization_period_in_major_units) > 0 && (
                           <div className="text-sm text-slate-500 mt-1">
@@ -550,10 +549,10 @@ function findMatchingCountry(
                     
                     {chunkMemberships(pricingData.memberships, 3).map((membershipRow) => (
                       <div className={`grid gap-3 ${
-                        membershipRow.length === 1 
-                          ? 'grid-cols-1 justify-center' 
-                          : membershipRow.length === 2 
-                            ? 'grid-cols-2 max-w-2xl mx-auto' 
+                        membershipRow.length === 1
+                          ? 'grid-cols-1 max-w-xs mx-auto w-full'
+                          : membershipRow.length === 2
+                            ? 'grid-cols-2 max-w-2xl mx-auto'
                             : 'grid-cols-3'
                       }`}>
                         {membershipRow.map((membership) => (
@@ -578,9 +577,26 @@ function findMatchingCountry(
                             {membership.short_description && (
                               <p className="text-xs text-slate-600 mb-3">{membership.short_description}</p>
                             )}
-                            {membership.time_limit_minutes && (
-                              <div className="text-xs text-slate-500 mb-2">
-                                {t('x_per_day', { duration: getDurationLabel(membership.time_limit_minutes) })}
+                            {membership.plan_items && membership.plan_items.length > 0 && (
+                              <div className="bg-slate-50 rounded-lg px-3 py-2 mb-3 space-y-1">
+                                {membership.plan_items.map((item) => (
+                                  <div key={item.vehicle_type} className="flex items-center justify-between gap-2 text-xs">
+                                    <span className="flex items-center gap-1 text-slate-600 font-medium">
+                                      {item.vehicle_type === 'ebike'
+                                        ? <><Zap className="w-3 h-3 text-yellow-500" />E-bike</>
+                                        : <><Bike className="w-3 h-3 text-slate-500" />Bike</>}
+                                    </span>
+                                    <span className="text-slate-500">
+                                      {item.time_limit
+                                        ? t('x_per_day', { duration: getDurationLabel(item.time_limit) })
+                                        : item.custom_price != null && item.custom_step != null
+                                          ? (item.custom_step === 1
+                                              ? t('every_x_minute', { price: formatPrice(item.custom_price, membership.currency) })
+                                              : t('every_x_minutes', { price: formatPrice(item.custom_price, membership.currency), minutes: item.custom_step }))
+                                          : null}
+                                    </span>
+                                  </div>
+                                ))}
                               </div>
                             )}
                             <div className="mb-1">
