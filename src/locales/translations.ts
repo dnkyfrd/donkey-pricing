@@ -38,6 +38,7 @@ export const translations = {
     'x_per_day': '{{duration}} per day',
     'per_year': '/year',
     'hours_included': '{{hours}} hours of included time',
+    'or': 'or',
     'valid_for_x_day': 'Valid for {{days}} day',
     'valid_for_x_days': 'Valid for {{days}} days'
   },
@@ -80,6 +81,7 @@ export const translations = {
     'x_per_day': '{{duration}} am Tag inklusive',
     'per_year': '/Jahr',
     'hours_included': '{{hours}} Stunden inkludierte Zeit',
+    'or': 'oder',
     'valid_for_x_day': 'Gültig für {{days}} Tag',
     'valid_for_x_days': 'Gültig für {{days}} Tage'
   }

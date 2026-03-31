@@ -599,13 +599,22 @@ function findMatchingCountry(
                                 ))}
                               </div>
                             )}
-                            <div className="mb-1">
-                              <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
-                              <div className="text-xs text-slate-600">{membership.period === 'semester' ? t('per_semester') : t('per_month')}</div>
-                            </div>
-                            {membership.yearly_price && (
-                              <div className="text-xs text-slate-500">
-                                {formatPrice(Math.round(membership.yearly_price), membership.currency)}{t('per_year')}
+                            {membership.yearly_price ? (
+                              <div className="flex flex-col gap-1.5">
+                                <div className="flex items-baseline justify-center gap-1">
+                                  <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
+                                  <span className="text-xs text-slate-500">{membership.period === 'semester' ? t('per_semester') : t('per_month')}</span>
+                                </div>
+                                <div className="text-xs text-slate-400">{t('or')}</div>
+                                <div className="flex items-baseline justify-center gap-1">
+                                  <span className="text-base font-semibold text-slate-700">{formatPrice(Math.round(membership.yearly_price), membership.currency)}</span>
+                                  <span className="text-xs text-slate-500">{t('per_year')}</span>
+                                </div>
+                              </div>
+                            ) : (
+                              <div className="flex items-baseline justify-center gap-1">
+                                <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
+                                <span className="text-xs text-slate-500">{membership.period === 'semester' ? t('per_semester') : t('per_month')}</span>
                               </div>
                             )}
                           </div>
