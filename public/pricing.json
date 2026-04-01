@@ -3320,7 +3320,7 @@
         "price": 8,
         "currency": "EUR",
         "period": "month",
-        "short_description": "",
+        "short_description": "Fahre die ersten 30 Minuten deiner Miete kostenlos.",
         "popular": false,
         "plan_items": [
           {
