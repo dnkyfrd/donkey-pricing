@@ -673,11 +673,11 @@
     "memberships": [
       {
         "id": 3606,
-        "name": "Daily Rider KielRegion",
+        "name": "Abo Sprottenflotte",
         "price": 8,
         "currency": "EUR",
         "period": "month",
-        "short_description": "",
+        "short_description": "Fahre die ersten 30 Minuten deiner Miete kostenlos.",
         "popular": false,
         "plan_items": [
           {
@@ -3316,7 +3316,7 @@
     "memberships": [
       {
         "id": 3606,
-        "name": "Daily Rider KielRegion",
+        "name": "Abo Sprottenflotte",
         "price": 8,
         "currency": "EUR",
         "period": "month",
