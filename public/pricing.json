@@ -5097,76 +5097,76 @@
         "duration": [
           {
             "duration_minutes": 15,
-            "price": "16.0",
+            "price": "20.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 30,
-            "price": "25.0",
+            "price": "29.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 60,
-            "price": "50.0",
+            "price": "65.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 120,
-            "price": "70.0",
+            "price": "80.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 240,
-            "price": "110.0",
+            "price": "120.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 360,
-            "price": "150.0",
+            "price": "160.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 720,
-            "price": "200.0",
+            "price": "250.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 1440,
-            "price": "240.0",
+            "price": "300.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 2880,
-            "price": "380.0",
+            "price": "440.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 4320,
-            "price": "520.0",
+            "price": "610.0",
             "currency": "SEK",
             "is_interval_pricing": false,
             "interval_label": ""
           }
         ],
-        "additional_day": 140
+        "additional_day": 225
       }
     ],
     "dayDeals": [],
