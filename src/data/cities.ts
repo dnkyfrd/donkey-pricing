@@ -252,6 +252,13 @@ export const cityData: ApiCity[] = [
         "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=55.6413314,12.0809966&country_code=DK",
         "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=55.6413314,12.0809966",
         "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=55.6413314,12.0809966&filter_type=radius&radius=10000"
+    },
+    {
+        "city_name": "Skive",
+        "city_app_id": 843,
+        "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=56.565066,9.030831&country_code=DK",
+        "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=56.565066,9.030831",
+        "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=56.565066,9.030831&filter_type=radius&radius=10000"
     }
 ];
 
