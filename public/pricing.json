@@ -7025,5 +7025,146 @@
         "title": "Pedal bike"
       }
     ]
+  },
+  "Skive": {
+    "memberships": [
+      {
+        "id": 3586,
+        "name": "Donkey Community",
+        "price": 49,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Join our Community and ride for less",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": 15,
+            "custom_step": 30
+          },
+          {
+            "vehicle_type": "ebike",
+            "time_limit": null,
+            "custom_price": 15,
+            "custom_step": 15
+          }
+        ],
+        "yearly_price": 348
+      },
+      {
+        "id": 3587,
+        "name": "Donkey Commuter",
+        "price": 195,
+        "currency": "DKK",
+        "period": "month",
+        "short_description": "Included minutes, every day you ride",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": 60,
+            "custom_price": 0.5,
+            "custom_step": 1
+          },
+          {
+            "vehicle_type": "ebike",
+            "time_limit": 15,
+            "custom_price": 1,
+            "custom_step": 1
+          }
+        ],
+        "yearly_price": 1788
+      }
+    ],
+    "justRide": [
+      {
+        "id": 920,
+        "vehicle_type": "bike",
+        "currency": "DKK",
+        "strategy": "per_tier_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "15.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": [
+          {
+            "duration_minutes": 15,
+            "price": "0.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 30,
+            "price": "15.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 60,
+            "price": "30.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 120,
+            "price": "40.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 240,
+            "price": "50.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 360,
+            "price": "60.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 720,
+            "price": "85.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "100.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 2880,
+            "price": "175.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 4320,
+            "price": "230.0",
+            "currency": "DKK",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          }
+        ],
+        "additional_day": 55
+      }
+    ],
+    "dayDeals": [],
+    "warning": "No dayDeals."
   }
 }
