@@ -123,6 +123,57 @@
     ],
     "dayDeals": [
       {
+        "id": 322,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "4.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 323,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "8.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 324,
+        "vehicle_type": "bike",
+        "duration": "PT43200M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 720,
+        "title": "Pedal bike"
+      },
+      {
         "id": 180,
         "vehicle_type": "bike",
         "duration": "PT1440M",
@@ -186,6 +237,57 @@
     ],
     "dayDeals": [
       {
+        "id": 322,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "4.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 323,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "8.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 324,
+        "vehicle_type": "bike",
+        "duration": "PT43200M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 720,
+        "title": "Pedal bike"
+      },
+      {
         "id": 180,
         "vehicle_type": "bike",
         "duration": "PT1440M",
@@ -248,6 +350,57 @@
       }
     ],
     "dayDeals": [
+      {
+        "id": 322,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "4.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 323,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "8.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 324,
+        "vehicle_type": "bike",
+        "duration": "PT43200M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 896,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 720,
+        "title": "Pedal bike"
+      },
       {
         "id": 180,
         "vehicle_type": "bike",
@@ -1976,6 +2129,57 @@
       }
     ],
     "dayDeals": [
+      {
+        "id": 319,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT3600S"
+        },
+        "price": "4.0",
+        "currency": "EUR",
+        "account_id": 865,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 320,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT10800S"
+        },
+        "price": "8.0",
+        "currency": "EUR",
+        "account_id": 865,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 321,
+        "vehicle_type": "bike",
+        "duration": "PT43200M",
+        "free_time": {
+          "bike": "PT18000S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 865,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 720,
+        "title": "Pedal bike"
+      },
       {
         "id": 181,
         "vehicle_type": "bike",
@@ -3816,23 +4020,6 @@
     ],
     "dayDeals": [
       {
-        "id": 272,
-        "vehicle_type": "bike",
-        "duration": "PT720M",
-        "free_time": {
-          "bike": "PT43200S"
-        },
-        "price": "11.0",
-        "currency": "EUR",
-        "account_id": 381,
-        "tag": null,
-        "name": null,
-        "auto_renewable": false,
-        "bike_type": "bike",
-        "duration_hours": 12,
-        "title": "Pedal bike"
-      },
-      {
         "id": 182,
         "vehicle_type": "bike",
         "duration": "PT1440M",
@@ -3850,20 +4037,37 @@
         "title": "Pedal bike"
       },
       {
-        "id": 273,
+        "id": 317,
         "vehicle_type": "bike",
         "duration": "PT2880M",
         "free_time": {
           "bike": "PT172800S"
         },
-        "price": "24.0",
+        "price": "25.0",
+        "currency": "EUR",
+        "account_id": 381,
+        "tag": "Popular",
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 48,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 318,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT259200S"
+        },
+        "price": "35.0",
         "currency": "EUR",
         "account_id": 381,
         "tag": null,
         "name": null,
         "auto_renewable": false,
         "bike_type": "bike",
-        "duration_hours": 48,
+        "duration_hours": 72,
         "title": "Pedal bike"
       }
     ]
@@ -4540,10 +4744,10 @@
       {
         "id": 3524,
         "name": "SparDonkey",
-        "price": 14.9,
+        "price": 9.9,
         "currency": "EUR",
         "period": "month",
-        "short_description": "5 x 2 Stunden E-Lastenradmiete pro Monat kostenlos radeln, danach fallen Just-Ride-Preise an.",
+        "short_description": "10 x 30 Minuten E-Lastenradmiete pro Monat kostenlos radeln, danach fallen Just-Ride-Preise an.",
         "popular": false,
         "plan_items": [
           {
