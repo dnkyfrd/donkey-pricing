@@ -433,7 +433,7 @@ function findMatchingCountry(
                     {/* Interval-based (Copenhagen-style) pricing support */}
                     {isIntervalPricing(pricing.duration) ? (
                       <div className="rounded-lg p-4 text-center">
-                        {!(Number(pricing.duration.starting_fee_in_major_units) === 0 && Number(pricing.duration.starting_fee_duration_minutes) === 0) && (
+                        {!(Number(pricing.duration.starting_fee_in_major_units) === 0 && Number(pricing.duration.starting_fee_duration_minutes) === 0) && !(Number(pricing.duration.starting_fee_in_major_units) === Number(pricing.duration.cost_per_interval_in_major_units) && Number(pricing.duration.starting_fee_duration_minutes) === Number(pricing.duration.interval_length_minutes)) && (
                           <div className="text-base font-bold text-slate-900 mb-1">
                             {`${formatPrice(Number(pricing.duration.starting_fee_in_major_units), pricing.currency)} for first ${Number(pricing.duration.starting_fee_duration_minutes)} minutes`}
                           </div>
