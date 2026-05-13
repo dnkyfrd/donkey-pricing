@@ -603,7 +603,7 @@ function findMatchingCountry(
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex items-baseline justify-center gap-1">
                                   <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
-                                  <span className="text-xs text-slate-500">{membership.period === 'semester' ? t('per_semester') : t('per_month')}</span>
+                                  <span className="text-xs text-slate-500">{membership.period === 'semester' ? t('per_semester') : membership.period === 'year' ? t('per_year') : t('per_month')}</span>
                                 </div>
                                 <div className="text-xs text-slate-400">{t('or')}</div>
                                 <div className="flex items-baseline justify-center gap-1">
@@ -614,7 +614,7 @@ function findMatchingCountry(
                             ) : (
                               <div className="flex items-baseline justify-center gap-1">
                                 <span className="text-xl font-bold text-slate-900">{formatPrice(membership.price, membership.currency)}</span>
-                                <span className="text-xs text-slate-500">{membership.period === 'semester' ? t('per_semester') : t('per_month')}</span>
+                                <span className="text-xs text-slate-500">{membership.period === 'semester' ? t('per_semester') : membership.period === 'year' ? t('per_year') : t('per_month')}</span>
                               </div>
                             )}
                           </div>
