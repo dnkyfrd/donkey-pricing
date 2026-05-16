@@ -6456,7 +6456,7 @@
         "currency": "DKK",
         "account_id": 19,
         "tag": null,
-        "name": "Monthly e-bike pass",
+        "name": null,
         "auto_renewable": false,
         "bike_type": "ebike",
         "duration_hours": 720,
