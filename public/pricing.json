@@ -4936,7 +4936,7 @@
           },
           {
             "duration_minutes": 45,
-            "price": "3.0",
+            "price": "4.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5194,16 +5194,30 @@
         "vehicle_type": "ecargo",
         "currency": "EUR",
         "strategy": "per_tier_billing",
-        "reservation_enabled": false,
-        "reservation_fee": "0.1",
-        "reservation_time_minutes": 10,
+        "reservation_enabled": true,
+        "reservation_fee": "0.5",
+        "reservation_time_minutes": 15,
         "theft_insurance": "2.0",
         "theft_insurance_factor": "0.15",
         "theft_insurance_hour_price": 0,
         "duration": [
           {
+            "duration_minutes": 15,
+            "price": "2.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 30,
             "price": "3.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 45,
+            "price": "4.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5216,8 +5230,22 @@
             "interval_label": ""
           },
           {
+            "duration_minutes": 75,
+            "price": "6.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 90,
             "price": "7.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 105,
+            "price": "8.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5230,8 +5258,22 @@
             "interval_label": ""
           },
           {
+            "duration_minutes": 135,
+            "price": "10.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 150,
             "price": "11.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 165,
+            "price": "12.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5244,8 +5286,22 @@
             "interval_label": ""
           },
           {
+            "duration_minutes": 195,
+            "price": "14.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 210,
             "price": "15.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 225,
+            "price": "16.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5258,8 +5314,22 @@
             "interval_label": ""
           },
           {
+            "duration_minutes": 255,
+            "price": "18.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 270,
             "price": "19.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 285,
+            "price": "20.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5272,8 +5342,22 @@
             "interval_label": ""
           },
           {
+            "duration_minutes": 315,
+            "price": "22.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 330,
             "price": "23.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 345,
+            "price": "24.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5286,8 +5370,22 @@
             "interval_label": ""
           },
           {
+            "duration_minutes": 375,
+            "price": "26.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
             "duration_minutes": 390,
             "price": "27.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 405,
+            "price": "28.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -5300,28 +5398,77 @@
             "interval_label": ""
           },
           {
-            "duration_minutes": 1440,
+            "duration_minutes": 435,
             "price": "30.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
-            "duration_minutes": 2880,
-            "price": "60.0",
+            "duration_minutes": 450,
+            "price": "31.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
-            "duration_minutes": 4320,
-            "price": "90.0",
+            "duration_minutes": 465,
+            "price": "32.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 480,
+            "price": "33.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 495,
+            "price": "34.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 510,
+            "price": "35.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 525,
+            "price": "36.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 540,
+            "price": "37.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 555,
+            "price": "38.0",
+            "currency": "EUR",
+            "is_interval_pricing": false,
+            "interval_label": ""
+          },
+          {
+            "duration_minutes": 1440,
+            "price": "40.0",
             "currency": "EUR",
             "is_interval_pricing": false,
             "interval_label": ""
           }
         ],
-        "additional_day": 30
+        "additional_day": 40
       }
     ],
     "dayDeals": [
