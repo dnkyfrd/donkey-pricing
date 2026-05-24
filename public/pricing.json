@@ -3876,42 +3876,42 @@
         "duration": [
           {
             "duration_minutes": 30,
-            "price": "1.0",
+            "price": "0.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 60,
-            "price": "1.0",
+            "price": "0.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 120,
-            "price": "2.0",
+            "price": "0.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 240,
-            "price": "3.0",
+            "price": "0.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 360,
-            "price": "4.0",
+            "price": "0.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 720,
-            "price": "5.0",
+            "price": "0.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
