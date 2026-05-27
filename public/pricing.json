@@ -3876,42 +3876,42 @@
         "duration": [
           {
             "duration_minutes": 30,
-            "price": "0.0",
+            "price": "1.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 60,
-            "price": "0.0",
+            "price": "1.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 120,
-            "price": "0.0",
+            "price": "2.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 240,
-            "price": "0.0",
+            "price": "3.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 360,
-            "price": "0.0",
+            "price": "4.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 720,
-            "price": "0.0",
+            "price": "5.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
@@ -6575,13 +6575,13 @@
         "title": "E-bike"
       },
       {
-        "id": 330,
+        "id": 331,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT86400S"
         },
-        "price": "129.0",
+        "price": "109.0",
         "currency": "DKK",
         "account_id": 19,
         "tag": null,
