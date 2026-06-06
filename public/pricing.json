@@ -6557,31 +6557,14 @@
         "title": "Pedal bike"
       },
       {
-        "id": 335,
-        "vehicle_type": "bike",
-        "duration": "PT1440M",
-        "free_time": {
-          "bike": "PT86400S"
-        },
-        "price": "109.0",
-        "currency": "DKK",
-        "account_id": 19,
-        "tag": null,
-        "name": null,
-        "auto_renewable": false,
-        "bike_type": "bike",
-        "duration_hours": 24,
-        "title": "Pedal bike"
-      },
-      {
-        "id": 340,
+        "id": 343,
         "vehicle_type": "ebike",
         "duration": "PT10080M",
         "free_time": {
           "bike": "PT7200S",
           "ebike": "PT7200S"
         },
-        "price": "139.0",
+        "price": "109.0",
         "currency": "DKK",
         "account_id": 19,
         "tag": null,
@@ -6590,6 +6573,23 @@
         "bike_type": "ebike",
         "duration_hours": 168,
         "title": "E-bike"
+      },
+      {
+        "id": 341,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "139.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
       },
       {
         "id": 329,
