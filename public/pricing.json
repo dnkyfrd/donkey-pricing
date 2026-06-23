@@ -20,6 +20,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -72,6 +90,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [],
@@ -1262,6 +1298,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -1314,6 +1368,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [
@@ -1681,6 +1753,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -1733,6 +1823,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [],
@@ -2237,6 +2345,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Launch special! Enjoy a discounted rate with your monthly membership between July and September.",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -2289,6 +2415,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "Launch special! Enjoy a discounted rate with your yearly membership between July and September.<br><br>",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [],
@@ -4107,6 +4251,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -4159,6 +4321,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [
@@ -4329,6 +4509,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -4381,6 +4579,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [],
@@ -4609,6 +4825,24 @@
         "yearly_price": 77
       },
       {
+        "id": 3687,
+        "name": "Monatsabo Düsselbike",
+        "price": 10,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 102
+      },
+      {
         "id": 3500,
         "name": "Daily Rider",
         "price": 10,
@@ -4661,6 +4895,24 @@
           }
         ],
         "yearly_price": 225
+      },
+      {
+        "id": 3686,
+        "name": "Jahresabo Düsselbike",
+        "price": 60,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 600
       }
     ],
     "justRide": [
