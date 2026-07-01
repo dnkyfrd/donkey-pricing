@@ -726,23 +726,6 @@
     ],
     "dayDeals": [
       {
-        "id": 350,
-        "vehicle_type": "bike",
-        "duration": "PT14400M",
-        "free_time": {
-          "bike": "PT36000S"
-        },
-        "price": "5.0",
-        "currency": "EUR",
-        "account_id": 866,
-        "tag": null,
-        "name": "Kieler Week Pass ",
-        "auto_renewable": false,
-        "bike_type": "bike",
-        "duration_hours": 240,
-        "title": "Pedal bike"
-      },
-      {
         "id": 275,
         "vehicle_type": "bike",
         "duration": "PT4320M",
@@ -3218,23 +3201,6 @@
       }
     ],
     "dayDeals": [
-      {
-        "id": 350,
-        "vehicle_type": "bike",
-        "duration": "PT14400M",
-        "free_time": {
-          "bike": "PT36000S"
-        },
-        "price": "5.0",
-        "currency": "EUR",
-        "account_id": 866,
-        "tag": null,
-        "name": "Kieler Week Pass ",
-        "auto_renewable": false,
-        "bike_type": "bike",
-        "duration_hours": 240,
-        "title": "Pedal bike"
-      },
       {
         "id": 275,
         "vehicle_type": "bike",
@@ -6964,5 +6930,71 @@
     ],
     "dayDeals": [],
     "warning": "No dayDeals."
+  },
+  "Düsseldorf": {
+    "memberships": [
+      {
+        "id": 3701,
+        "name": "Düsselbike Abo",
+        "price": 8.5,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ],
+        "yearly_price": 50
+      }
+    ],
+    "justRide": [
+      {
+        "id": 867,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "0.0",
+          "starting_fee_duration_minutes": "0.0",
+          "cost_per_interval_in_major_units": "1.0",
+          "max_price_per_normalization_period_in_major_units": "15.0"
+        }
+      }
+    ],
+    "dayDeals": [
+      {
+        "id": 358,
+        "vehicle_type": "bike",
+        "duration": "PT4320M",
+        "free_time": {
+          "bike": "PT14400S",
+          "cargo": "PT14400S",
+          "ebike": "PT14400S",
+          "ecargo": "PT14400S"
+        },
+        "price": "5.0",
+        "currency": "EUR",
+        "account_id": 976,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 72,
+        "title": "Pedal bike"
+      }
+    ]
   }
 }
