@@ -266,6 +266,13 @@ export const cityData: ApiCity[] = [
         "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=51.222686,6.782629&country_code=DE",
         "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=51.222686,6.782629",
         "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=51.222686,6.782629&filter_type=radius&radius=10000"
+    },
+    {
+        "city_name": "Oulu",
+        "city_app_id": 844,
+        "memberships_api_url": "https://stables.donkey.bike/api/public/plans?location=65.010561,25.468982&country_code=FI",
+        "just_ride_api_url": "https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=65.010561,25.468982",
+        "day_deals_api_url": "https://stables.donkey.bike/api/public/nearby?location=https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=65.010561,25.468982&filter_type=radius&radius=10000"
     }
 ];
 
