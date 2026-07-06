@@ -3,6 +3,7 @@
   { "name": "Oegstgeest",        "city_app_id": 645, "country": "NL", "lat": 52.1862262, "lon":  4.4748104, "radius":  5000 },
   { "name": "Leiden",            "city_app_id": 644, "country": "NL", "lat": 52.1636188, "lon":  4.4802444, "radius":  5000 },
   { "name": "Katwijk",           "city_app_id": 643, "country": "NL", "lat": 52.1992517, "lon":  4.4114135, "radius":  5000 },
+  { "name": "Düsseldorf",        "city_app_id": 584, "country": "DE", "lat": 51.222686,  "lon":  6.782629,  "radius": 10000 },
   { "name": "Mechelen Region",   "city_app_id": 639, "country": "BE", "lat": 51.0259143, "lon":  4.4775553, "radius":  5000 },
   { "name": "Schlei Region",     "city_app_id": 866, "country": "DE", "lat": 54.3438625, "lon": 10.1226193, "radius":  5000 },
   { "name": "Helsingør",         "city_app_id": 599, "country": "DK", "lat": 56.030787,  "lon": 12.592127,  "radius":  5000 },
@@ -35,6 +36,5 @@
   { "name": "Copenhagen",        "city_app_id":   1, "country": "DK", "lat": 55.6760968, "lon": 12.5683372, "radius":  5000 },
   { "name": "Roskilde",          "city_app_id":  19, "country": "DK", "lat": 55.6413314, "lon": 12.0809966, "radius": 10000 },
   { "name": "Skive",             "city_app_id": 843, "country": "DK", "lat": 56.565066,  "lon":  9.030831,  "radius": 10000 },
-  { "name": "Düsseldorf",        "city_app_id": 584, "country": "DE", "lat": 51.222686,  "lon":  6.782629,  "radius": 10000 },
   { "name": "Oulu",              "city_app_id": 844, "country": "FI", "lat": 65.010561,  "lon": 25.468982,  "radius": 10000 }
 ]
