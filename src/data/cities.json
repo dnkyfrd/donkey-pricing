@@ -10,7 +10,6 @@
   { "name": "Hanover",           "city_app_id": 592, "country": "DE", "lat": 52.3758916, "lon":  9.7320104, "radius":  5000 },
   { "name": "Waasland",          "city_app_id": 309, "country": "BE", "lat": 51.2144,    "lon":  4.1265,    "radius":  5000 },
   { "name": "Kreuzlingen",       "city_app_id": 304, "country": "CH", "lat": 47.6405685, "lon":  9.1729994, "radius":  5000 },
-  { "name": "Prignitz",          "city_app_id": 594, "country": "DE", "lat": 53.0819589, "lon": 11.8598802, "radius":  5000 },
   { "name": "Thun",              "city_app_id": 247, "country": "CH", "lat": 46.7579868, "lon":  7.6279881, "radius":  5000 },
   { "name": "Dordecht",          "city_app_id": 355, "country": "NL", "lat": 51.8144387, "lon":  4.6672405, "radius":  5000 },
   { "name": "Le Locle",          "city_app_id": 216, "country": "CH", "lat": 47.056301,  "lon":  6.746850,  "radius":  5000 },
