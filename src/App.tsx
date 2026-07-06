@@ -161,7 +161,7 @@ function findMatchingCountry(
           setSelectedCity('Antwerp');
           break;
         case 'Germany':
-          setSelectedCity('Hanover');
+          setSelectedCity('Düsseldorf');
           break;
         default:
           setSelectedCity(cities[0].city_name);
