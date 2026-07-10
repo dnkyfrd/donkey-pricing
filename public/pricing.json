@@ -452,7 +452,7 @@
         "reservation_time_minutes": 15,
         "theft_insurance": "2.0",
         "theft_insurance_factor": "0.15",
-        "theft_insurance_hour_price": 0,
+        "theft_insurance_hour_price": "0.5",
         "duration": {
           "interval_length_minutes": "15.0",
           "normalization_period_mins": "1440.0",
@@ -3350,7 +3350,7 @@
         "reservation_time_minutes": 15,
         "theft_insurance": "2.0",
         "theft_insurance_factor": "0.15",
-        "theft_insurance_hour_price": 0,
+        "theft_insurance_hour_price": "0.5",
         "duration": {
           "interval_length_minutes": "60.0",
           "normalization_period_mins": "1440.0",
@@ -5557,6 +5557,43 @@
     ],
     "dayDeals": [
       {
+        "id": 236,
+        "vehicle_type": "cargo",
+        "duration": "PT14400M",
+        "free_time": {
+          "bike": "PT10800S",
+          "cargo": "PT10800S",
+          "ebike": "PT10800S",
+          "ecargo": "PT10800S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 643,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "cargo",
+        "duration_hours": 240,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 368,
+        "vehicle_type": "ecargo",
+        "duration": "PT14400M",
+        "free_time": {
+          "ecargo": "PT10800S"
+        },
+        "price": "10.0",
+        "currency": "EUR",
+        "account_id": 643,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ecargo",
+        "duration_hours": 240,
+        "title": "Pedal bike"
+      },
+      {
         "id": 232,
         "vehicle_type": "bike",
         "duration": "PT14400M",
@@ -5594,46 +5631,6 @@
         "auto_renewable": false,
         "bike_type": "ebike",
         "duration_hours": 240,
-        "title": "E-bike"
-      },
-      {
-        "id": 236,
-        "vehicle_type": "cargo",
-        "duration": "PT14400M",
-        "free_time": {
-          "bike": "PT10800S",
-          "cargo": "PT10800S",
-          "ebike": "PT10800S",
-          "ecargo": "PT10800S"
-        },
-        "price": "10.0",
-        "currency": "EUR",
-        "account_id": 643,
-        "tag": null,
-        "name": null,
-        "auto_renewable": false,
-        "bike_type": "cargo",
-        "duration_hours": 240,
-        "title": "Pedal bike"
-      },
-      {
-        "id": 237,
-        "vehicle_type": "ebike",
-        "duration": "PT28800M",
-        "free_time": {
-          "bike": "PT21600S",
-          "cargo": "PT21600S",
-          "ebike": "PT21600S",
-          "ecargo": "PT21600S"
-        },
-        "price": "20.0",
-        "currency": "EUR",
-        "account_id": 643,
-        "tag": null,
-        "name": null,
-        "auto_renewable": false,
-        "bike_type": "ebike",
-        "duration_hours": 480,
         "title": "E-bike"
       },
       {
@@ -5677,24 +5674,41 @@
         "title": "Pedal bike"
       },
       {
-        "id": 239,
+        "id": 237,
         "vehicle_type": "ebike",
-        "duration": "PT43200M",
+        "duration": "PT28800M",
         "free_time": {
-          "bike": "PT32400S",
-          "cargo": "PT32400S",
-          "ebike": "PT32400S",
-          "ecargo": "PT32400S"
+          "bike": "PT21600S",
+          "cargo": "PT21600S",
+          "ebike": "PT21600S",
+          "ecargo": "PT21600S"
         },
-        "price": "30.0",
+        "price": "20.0",
         "currency": "EUR",
         "account_id": 643,
         "tag": null,
         "name": null,
         "auto_renewable": false,
         "bike_type": "ebike",
-        "duration_hours": 720,
+        "duration_hours": 480,
         "title": "E-bike"
+      },
+      {
+        "id": 369,
+        "vehicle_type": "ecargo",
+        "duration": "PT28800M",
+        "free_time": {
+          "ecargo": "PT21600S"
+        },
+        "price": "20.0",
+        "currency": "EUR",
+        "account_id": 643,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ecargo",
+        "duration_hours": 480,
+        "title": "Pedal bike"
       },
       {
         "id": 240,
@@ -5735,6 +5749,43 @@
         "bike_type": "bike",
         "duration_hours": 720,
         "title": "Pedal bike"
+      },
+      {
+        "id": 370,
+        "vehicle_type": "ecargo",
+        "duration": "PT43200M",
+        "free_time": {
+          "ecargo": "PT32400S"
+        },
+        "price": "30.0",
+        "currency": "EUR",
+        "account_id": 643,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ecargo",
+        "duration_hours": 720,
+        "title": "Pedal bike"
+      },
+      {
+        "id": 239,
+        "vehicle_type": "ebike",
+        "duration": "PT43200M",
+        "free_time": {
+          "bike": "PT32400S",
+          "cargo": "PT32400S",
+          "ebike": "PT32400S",
+          "ecargo": "PT32400S"
+        },
+        "price": "30.0",
+        "currency": "EUR",
+        "account_id": 643,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "ebike",
+        "duration_hours": 720,
+        "title": "E-bike"
       }
     ]
   },
