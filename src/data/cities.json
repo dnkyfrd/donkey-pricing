@@ -18,6 +18,7 @@
   { "name": "De Panne",          "city_app_id": 561, "country": "BE", "lat": 51.0954751, "lon":  2.58877,   "radius":  5000 },
   { "name": "Kiel Region",       "city_app_id": 516, "country": "DE", "lat": 54.3438625, "lon": 10.1226193, "radius":  5000 },
   { "name": "Ruhr Region",       "city_app_id": 785, "country": "DE", "lat": 51.545100,  "lon":  7.198100,  "radius":  5000 },
+  { "name": "Helsinki",          "city_app_id": 283, "country": "FI", "lat": 60.168905,  "lon": 24.938396,  "radius":  5000 },
   { "name": "Turku",             "city_app_id": 345, "country": "FI", "lat": 60.4518126, "lon": 22.2666303, "radius":  5000 },
   { "name": "Geneva",            "city_app_id": 217, "country": "CH", "lat": 46.2043907, "lon":  6.1431577, "radius":  5000 },
   { "name": "Yverdon-les-Bains", "city_app_id": 519, "country": "CH", "lat": 46.7785,    "lon":  6.6412,    "radius":  5000 },
