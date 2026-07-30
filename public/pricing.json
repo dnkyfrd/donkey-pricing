@@ -6195,8 +6195,8 @@
           {
             "vehicle_type": "bike",
             "time_limit": 120,
-            "custom_price": 1,
-            "custom_step": 1440
+            "custom_price": null,
+            "custom_step": null
           }
         ],
         "yearly_price": 102
