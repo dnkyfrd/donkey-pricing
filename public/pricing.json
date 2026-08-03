@@ -4033,56 +4033,56 @@
         "duration": [
           {
             "duration_minutes": 30,
-            "price": "0.0",
+            "price": "1.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 60,
-            "price": "0.0",
+            "price": "1.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 120,
-            "price": "0.0",
+            "price": "2.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 240,
-            "price": "0.0",
+            "price": "3.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 360,
-            "price": "0.0",
+            "price": "4.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 720,
-            "price": "0.0",
+            "price": "5.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 1440,
-            "price": "0.0",
+            "price": "6.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
           },
           {
             "duration_minutes": 2880,
-            "price": "0.0",
+            "price": "12.0",
             "currency": "CHF",
             "is_interval_pricing": false,
             "interval_label": ""
