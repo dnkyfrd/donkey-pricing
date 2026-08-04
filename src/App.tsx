@@ -543,7 +543,7 @@ function findMatchingCountry(
                             <div>{t('price_maximum_daily_price', { price: '€4.50' })}</div>
                           </div>
                           <a
-                            href={`https://metropolradruhr.de/${locale}/student-discount`}
+                            href={`https://metropolradruhr.de/${locale === 'de' ? 'de/' : ''}student-discount`}
                             target="_top"
                             rel="noopener noreferrer"
                             className="inline-block w-full mt-4 px-3 py-2 rounded-lg text-sm font-semibold text-white transition-all hover:opacity-90"
