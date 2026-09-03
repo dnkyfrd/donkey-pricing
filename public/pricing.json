@@ -6230,13 +6230,13 @@
     ],
     "dayDeals": [
       {
-        "id": 419,
+        "id": 422,
         "vehicle_type": "bike",
         "duration": "PT1440M",
         "free_time": {
           "bike": "PT1800S"
         },
-        "price": "19.0",
+        "price": "29.0",
         "currency": "DKK",
         "account_id": 19,
         "tag": null,
@@ -6335,23 +6335,6 @@
         "title": "E-bike"
       },
       {
-        "id": 420,
-        "vehicle_type": "bike",
-        "duration": "PT1440M",
-        "free_time": {
-          "bike": "PT86400S"
-        },
-        "price": "119.0",
-        "currency": "DKK",
-        "account_id": 19,
-        "tag": null,
-        "name": null,
-        "auto_renewable": false,
-        "bike_type": "bike",
-        "duration_hours": 24,
-        "title": "Pedal bike"
-      },
-      {
         "id": 421,
         "vehicle_type": "ebike",
         "duration": "PT43200M",
@@ -6368,6 +6351,23 @@
         "bike_type": "ebike",
         "duration_hours": 720,
         "title": "E-bike"
+      },
+      {
+        "id": 423,
+        "vehicle_type": "bike",
+        "duration": "PT1440M",
+        "free_time": {
+          "bike": "PT86400S"
+        },
+        "price": "139.0",
+        "currency": "DKK",
+        "account_id": 19,
+        "tag": null,
+        "name": null,
+        "auto_renewable": false,
+        "bike_type": "bike",
+        "duration_hours": 24,
+        "title": "Pedal bike"
       }
     ]
   },
