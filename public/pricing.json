@@ -6018,7 +6018,7 @@
           "normalization_period_mins": "1440.0",
           "starting_fee_in_major_units": "19.0",
           "starting_fee_duration_minutes": "10.0",
-          "cost_per_interval_in_major_units": "2.0",
+          "cost_per_interval_in_major_units": "2.5",
           "max_price_per_normalization_period_in_major_units": "750.0"
         }
       }
