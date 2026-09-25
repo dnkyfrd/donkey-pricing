@@ -11,7 +11,7 @@
   { "name": "Waasland",          "city_app_id": 309, "country": "BE", "lat": 51.2144,    "lon":  4.1265,    "radius":  5000 },
   { "name": "Kreuzlingen",       "city_app_id": 304, "country": "CH", "lat": 47.6405685, "lon":  9.1729994, "radius":  5000 },
   { "name": "Thun",              "city_app_id": 247, "country": "CH", "lat": 46.7579868, "lon":  7.6279881, "radius":  5000 },
-  { "name": "Dordecht",          "city_app_id": 355, "country": "NL", "lat": 51.8144387, "lon":  4.6672405, "radius":  5000 },
+  { "name": "Dordrecht",         "city_app_id": 355, "country": "NL", "lat": 51.8144387, "lon":  4.6672405, "radius":  5000 },
   { "name": "Le Locle",          "city_app_id": 216, "country": "CH", "lat": 47.056301,  "lon":  6.746850,  "radius":  5000 },
   { "name": "Veurne",            "city_app_id": 475, "country": "BE", "lat": 51.073177,  "lon":  2.6680397, "radius":  5000 },
   { "name": "Koksijde",          "city_app_id": 559, "country": "BE", "lat": 51.1054229, "lon":  2.6501559, "radius":  5000 },
