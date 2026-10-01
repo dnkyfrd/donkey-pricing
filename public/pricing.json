@@ -405,9 +405,9 @@
   "Düsseldorf": {
     "memberships": [
       {
-        "id": 3701,
+        "id": 3823,
         "name": "Düsselbike Abo",
-        "price": 8.5,
+        "price": 10,
         "currency": "EUR",
         "period": "month",
         "short_description": "",
@@ -420,7 +420,7 @@
             "custom_step": null
           }
         ],
-        "yearly_price": 50
+        "yearly_price": 60
       }
     ],
     "justRide": [
@@ -3309,7 +3309,7 @@
           "normalization_period_mins": "1440.0",
           "starting_fee_in_major_units": "1.0",
           "starting_fee_duration_minutes": "10.0",
-          "cost_per_interval_in_major_units": "0.2",
+          "cost_per_interval_in_major_units": "0.12",
           "max_price_per_normalization_period_in_major_units": "30.0"
         }
       }
@@ -4641,35 +4641,6 @@
   "Straubing": {
     "memberships": [
       {
-        "id": 3524,
-        "name": "SparDonkey",
-        "price": 9.9,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "10 x 30 Minuten E-Lastenradmiete pro Monat kostenlos radeln, danach fallen Just-Ride-Preise an.",
-        "popular": false,
-        "plan_items": [
-          {
-            "vehicle_type": "bike",
-            "time_limit": 30,
-            "custom_price": null,
-            "custom_step": null
-          },
-          {
-            "vehicle_type": "ebike",
-            "time_limit": null,
-            "custom_price": null,
-            "custom_step": null
-          },
-          {
-            "vehicle_type": "ecargo",
-            "time_limit": null,
-            "custom_price": null,
-            "custom_step": null
-          }
-        ]
-      },
-      {
         "id": 3779,
         "name": "SparDonkey",
         "price": 19.9,
@@ -4681,35 +4652,6 @@
           {
             "vehicle_type": "bike",
             "time_limit": 30,
-            "custom_price": null,
-            "custom_step": null
-          },
-          {
-            "vehicle_type": "ebike",
-            "time_limit": null,
-            "custom_price": null,
-            "custom_step": null
-          },
-          {
-            "vehicle_type": "ecargo",
-            "time_limit": null,
-            "custom_price": null,
-            "custom_step": null
-          }
-        ]
-      },
-      {
-        "id": 3570,
-        "name": "Pendler Donkeys",
-        "price": 19.99,
-        "currency": "EUR",
-        "period": "month",
-        "short_description": "Pendler-Donkeys // Radle 25 x 30 Minuten kostenlos auf allen Bikes!",
-        "popular": false,
-        "plan_items": [
-          {
-            "vehicle_type": "bike",
-            "time_limit": null,
             "custom_price": null,
             "custom_step": null
           },
