@@ -3308,9 +3308,9 @@
   "Helsinki": {
     "memberships": [
       {
-        "id": 3710,
-        "name": "Donkey Commuter",
-        "price": 19.99,
+        "id": 3828,
+        "name": "Donkey Commuter (Special Offer)",
+        "price": 10,
         "currency": "EUR",
         "period": "month",
         "short_description": "",
@@ -3322,8 +3322,7 @@
             "custom_price": null,
             "custom_step": null
           }
-        ],
-        "yearly_price": 192
+        ]
       }
     ],
     "justRide": [
