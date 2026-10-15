@@ -8,6 +8,7 @@ interface RawCity {
   lat: number;
   lon: number;
   radius: number;
+  account_id?: number;
 }
 
 const COUNTRY_NAMES: Record<string, string> = {
