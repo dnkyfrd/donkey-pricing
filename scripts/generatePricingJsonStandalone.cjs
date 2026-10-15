@@ -11,11 +11,27 @@ const cityData = rawCities.map((c) => {
   return {
     city_name: c.name,
     city_app_id: c.city_app_id,
+    account_id: c.account_id,
     memberships_api_url: `https://stables.donkey.bike/api/public/plans?location=${loc}&country_code=${c.country}`,
     just_ride_api_url: `https://stables.donkey.bike/api/public/pricings?pricing_type=location&location=${loc}`,
     day_deals_api_url: `https://stables.donkey.bike/api/public/nearby?location=${loc}&filter_type=radius&radius=${c.radius}`,
   };
 });
+
+// The nearby API can return several accounts (e.g. a stray partner hub inside the
+// radius). Use the city's configured account_id if set, otherwise the account
+// with the most hubs in range.
+function pickDayDealsAccount(raw, city) {
+  const accounts = (raw && Array.isArray(raw.accounts)) ? raw.accounts : [];
+  if (city.account_id != null) {
+    const pinned = accounts.find((a) => a.id === city.account_id);
+    if (!pinned) console.log(`  WARNING: account ${city.account_id} not returned for ${city.city_name}`);
+    return pinned;
+  }
+  const hubCounts = {};
+  for (const h of (raw && raw.hubs) || []) hubCounts[h.account_id] = (hubCounts[h.account_id] || 0) + 1;
+  return accounts.reduce((best, a) => (!best || (hubCounts[a.id] || 0) > (hubCounts[best.id] || 0) ? a : best), undefined);
+}
 
 async function fetchPricing(city) {
   async function safeFetch(url, headers, label) {
@@ -145,8 +161,9 @@ async function fetchPricing(city) {
   // DAY DEALS
   const dayDealsRaw = await safeFetch(city.day_deals_api_url, { 'accept': 'application/com.donkeyrepublic.v8', 'User-Agent': 'Mozilla/5.0 (compatible; DonkeyRepublic-PricingScript/1.0)' }, 'dayDeals');
   let dayDeals = [];
-  if (dayDealsRaw && dayDealsRaw.accounts && Array.isArray(dayDealsRaw.accounts[0]?.pass_offers)) {
-    dayDeals = dayDealsRaw.accounts[0].pass_offers.map((passOffer, idx) => ({
+  const dealsAccount = pickDayDealsAccount(dayDealsRaw, city);
+  if (dealsAccount && Array.isArray(dealsAccount.pass_offers)) {
+    dayDeals = dealsAccount.pass_offers.map((passOffer, idx) => ({
       id: passOffer.id || `deal-${idx}`,
       vehicle_type: passOffer.vehicle_type || '',
       duration: passOffer.duration || '',

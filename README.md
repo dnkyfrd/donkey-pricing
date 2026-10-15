@@ -22,6 +22,7 @@ To add a city, edit that file on GitHub (pencil icon → edit) and add one line 
 | `lat`         | Latitude of the city centre                                    | `52.3702157`           |
 | `lon`         | Longitude of the city centre                                   | `4.8951679`            |
 | `radius`      | Search radius in metres for day-deals (usually `5000` or `10000` for regions) | `5000` |
+| `account_id`  | *Optional.* Account whose passes to show, when the area has more than one account (otherwise the one with the most hubs is used) | `1020` |
 
 **Don't forget the comma** at the end of the line above the one you added.
 
