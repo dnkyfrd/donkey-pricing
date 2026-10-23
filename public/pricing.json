@@ -6687,23 +6687,6 @@
             "custom_step": null
           }
         ]
-      },
-      {
-        "id": 3582,
-        "name": "Season Pass 2026 Pedal Bikes (1h)",
-        "price": 35,
-        "currency": "EUR",
-        "period": "year",
-        "short_description": "",
-        "popular": false,
-        "plan_items": [
-          {
-            "vehicle_type": "bike",
-            "time_limit": null,
-            "custom_price": null,
-            "custom_step": null
-          }
-        ]
       }
     ],
     "justRide": [
