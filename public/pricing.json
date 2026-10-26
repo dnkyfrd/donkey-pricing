@@ -6672,9 +6672,27 @@
   "Oulu": {
     "memberships": [
       {
-        "id": 3583,
-        "name": "Monthly Pass (1h)",
-        "price": 9,
+        "id": 2176,
+        "name": "Pay as you go",
+        "price": 8,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Ride for a fixed low price and save up to 85% on rental costs compared to our regular Just Ride pricing",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": 2,
+            "custom_step": 1440
+          }
+        ],
+        "yearly_price": 77
+      },
+      {
+        "id": 3500,
+        "name": "Daily Rider",
+        "price": 10,
         "currency": "EUR",
         "period": "month",
         "short_description": "",
@@ -6682,11 +6700,30 @@
         "plan_items": [
           {
             "vehicle_type": "bike",
-            "time_limit": null,
-            "custom_price": null,
-            "custom_step": null
+            "time_limit": 120,
+            "custom_price": 1,
+            "custom_step": 1440
           }
-        ]
+        ],
+        "yearly_price": 102
+      },
+      {
+        "id": 2178,
+        "name": "Commuter",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "short_description": "Keep the bike longer and enjoy 12 hours of free time every day",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": 720,
+            "custom_price": 1.5,
+            "custom_step": 1440
+          }
+        ],
+        "yearly_price": 225
       }
     ],
     "justRide": [
