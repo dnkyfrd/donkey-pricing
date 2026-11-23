@@ -719,6 +719,23 @@
           }
         ],
         "yearly_price": 25
+      },
+      {
+        "id": 3880,
+        "name": "Black Week Jahres-Abo",
+        "price": 19,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ]
       }
     ],
     "justRide": [
@@ -743,26 +760,6 @@
         }
       },
       {
-        "id": 637,
-        "vehicle_type": "cargo",
-        "currency": "EUR",
-        "strategy": "per_interval_billing",
-        "reservation_enabled": true,
-        "reservation_fee": "0.0",
-        "reservation_time_minutes": 15,
-        "theft_insurance": "2.0",
-        "theft_insurance_factor": "0.15",
-        "theft_insurance_hour_price": 0,
-        "duration": {
-          "interval_length_minutes": "15.0",
-          "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "0.0",
-          "starting_fee_duration_minutes": "0.0",
-          "cost_per_interval_in_major_units": "1.0",
-          "max_price_per_normalization_period_in_major_units": "20.0"
-        }
-      },
-      {
         "id": 634,
         "vehicle_type": "ebike",
         "currency": "EUR",
@@ -780,6 +777,26 @@
           "starting_fee_duration_minutes": "0.0",
           "cost_per_interval_in_major_units": "2.0",
           "max_price_per_normalization_period_in_major_units": "35.0"
+        }
+      },
+      {
+        "id": 637,
+        "vehicle_type": "cargo",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "0.0",
+          "starting_fee_duration_minutes": "0.0",
+          "cost_per_interval_in_major_units": "1.0",
+          "max_price_per_normalization_period_in_major_units": "20.0"
         }
       },
       {
@@ -3138,6 +3155,23 @@
           }
         ],
         "yearly_price": 25
+      },
+      {
+        "id": 3880,
+        "name": "Black Week Jahres-Abo",
+        "price": 19,
+        "currency": "EUR",
+        "period": "year",
+        "short_description": "",
+        "popular": false,
+        "plan_items": [
+          {
+            "vehicle_type": "bike",
+            "time_limit": null,
+            "custom_price": null,
+            "custom_step": null
+          }
+        ]
       }
     ],
     "justRide": [
@@ -3162,26 +3196,6 @@
         }
       },
       {
-        "id": 637,
-        "vehicle_type": "cargo",
-        "currency": "EUR",
-        "strategy": "per_interval_billing",
-        "reservation_enabled": true,
-        "reservation_fee": "0.0",
-        "reservation_time_minutes": 15,
-        "theft_insurance": "2.0",
-        "theft_insurance_factor": "0.15",
-        "theft_insurance_hour_price": 0,
-        "duration": {
-          "interval_length_minutes": "15.0",
-          "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "0.0",
-          "starting_fee_duration_minutes": "0.0",
-          "cost_per_interval_in_major_units": "1.0",
-          "max_price_per_normalization_period_in_major_units": "20.0"
-        }
-      },
-      {
         "id": 634,
         "vehicle_type": "ebike",
         "currency": "EUR",
@@ -3199,6 +3213,26 @@
           "starting_fee_duration_minutes": "0.0",
           "cost_per_interval_in_major_units": "2.0",
           "max_price_per_normalization_period_in_major_units": "35.0"
+        }
+      },
+      {
+        "id": 637,
+        "vehicle_type": "cargo",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": true,
+        "reservation_fee": "0.0",
+        "reservation_time_minutes": 15,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": 0,
+        "duration": {
+          "interval_length_minutes": "15.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "0.0",
+          "starting_fee_duration_minutes": "0.0",
+          "cost_per_interval_in_major_units": "1.0",
+          "max_price_per_normalization_period_in_major_units": "20.0"
         }
       },
       {
@@ -3325,28 +3359,7 @@
         ]
       }
     ],
-    "justRide": [
-      {
-        "id": 927,
-        "vehicle_type": "bike",
-        "currency": "EUR",
-        "strategy": "per_interval_billing",
-        "reservation_enabled": false,
-        "reservation_fee": null,
-        "reservation_time_minutes": null,
-        "theft_insurance": "2.0",
-        "theft_insurance_factor": "0.15",
-        "theft_insurance_hour_price": "0.5",
-        "duration": {
-          "interval_length_minutes": "1.0",
-          "normalization_period_mins": "1440.0",
-          "starting_fee_in_major_units": "1.0",
-          "starting_fee_duration_minutes": "10.0",
-          "cost_per_interval_in_major_units": "0.12",
-          "max_price_per_normalization_period_in_major_units": "30.0"
-        }
-      }
-    ],
+    "justRide": [],
     "dayDeals": [
       {
         "id": 496,
@@ -3416,7 +3429,8 @@
         "duration_hours": 24,
         "title": "Pedal bike"
       }
-    ]
+    ],
+    "warning": "No justRide."
   },
   "Turku": {
     "memberships": [
