@@ -3359,7 +3359,28 @@
         ]
       }
     ],
-    "justRide": [],
+    "justRide": [
+      {
+        "id": 927,
+        "vehicle_type": "bike",
+        "currency": "EUR",
+        "strategy": "per_interval_billing",
+        "reservation_enabled": false,
+        "reservation_fee": null,
+        "reservation_time_minutes": null,
+        "theft_insurance": "2.0",
+        "theft_insurance_factor": "0.15",
+        "theft_insurance_hour_price": "0.5",
+        "duration": {
+          "interval_length_minutes": "1.0",
+          "normalization_period_mins": "1440.0",
+          "starting_fee_in_major_units": "1.0",
+          "starting_fee_duration_minutes": "10.0",
+          "cost_per_interval_in_major_units": "0.12",
+          "max_price_per_normalization_period_in_major_units": "30.0"
+        }
+      }
+    ],
     "dayDeals": [
       {
         "id": 496,
@@ -3429,8 +3450,7 @@
         "duration_hours": 24,
         "title": "Pedal bike"
       }
-    ],
-    "warning": "No justRide."
+    ]
   },
   "Turku": {
     "memberships": [
