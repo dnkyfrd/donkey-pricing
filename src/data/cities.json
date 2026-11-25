@@ -30,7 +30,6 @@
   { "name": "Randers",           "city_app_id": 308, "country": "DK", "lat": 56.460584,  "lon": 10.036539,  "radius":  5000 },
   { "name": "The Hague",         "city_app_id": 306, "country": "NL", "lat": 52.0704978, "lon":  4.3006999, "radius":  5000 },
   { "name": "Ghent",             "city_app_id": 223, "country": "BE", "lat": 51.0543422, "lon":  3.7174243, "radius":  5000 },
-  { "name": "Barcelona",         "city_app_id":   8, "country": "ES", "lat": 41.3850639, "lon":  2.1734035, "radius":  5000 },
   { "name": "Copenhagen",        "city_app_id":   1, "country": "DK", "lat": 55.6760968, "lon": 12.5683372, "radius":  5000 },
   { "name": "Roskilde",          "city_app_id":  19, "country": "DK", "lat": 55.6413314, "lon": 12.0809966, "radius": 10000 },
   { "name": "Skive",             "city_app_id": 843, "country": "DK", "lat": 56.565066,  "lon":  9.030831,  "radius": 10000 },
