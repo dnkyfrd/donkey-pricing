@@ -2174,7 +2174,7 @@
         "reservation_time_minutes": null,
         "theft_insurance": "2.0",
         "theft_insurance_factor": "0.15",
-        "theft_insurance_hour_price": "0.3",
+        "theft_insurance_hour_price": "0.4",
         "duration": {
           "interval_length_minutes": "20.0",
           "normalization_period_mins": "1440.0",
